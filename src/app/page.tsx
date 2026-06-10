@@ -234,6 +234,84 @@ export default function HomePage() {
           </article>
         </div>
       </section>
+
+      <style>{`
+        .structure-card--full {
+          grid-column: 1 / -1;
+          padding: clamp(18px, 3vw, 28px);
+        }
+        .structure-card--full .structure-unit-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+          gap: 16px;
+        }
+        .structure-unit-card {
+          display: grid;
+          grid-template-columns: 94px minmax(0, 1fr);
+          gap: 16px;
+          align-items: start;
+          min-height: 172px;
+          padding: 18px;
+          border: 1px solid #edf1f6;
+          border-radius: var(--radius-md);
+          background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+        }
+        .structure-unit-logo {
+          display: grid;
+          place-items: center;
+          width: 94px;
+          height: 94px;
+          padding: 10px;
+          border-radius: var(--radius-md);
+          background: white;
+          border: 1px solid rgba(184, 164, 108, .28);
+        }
+        .structure-unit-logo img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+        .structure-unit-copy {
+          min-width: 0;
+        }
+        .structure-unit-city {
+          display: inline-flex;
+          min-height: 24px;
+          align-items: center;
+          padding: 0 8px;
+          border-radius: var(--radius-sm);
+          background: var(--brand-pale);
+          color: var(--brand-red);
+          font-size: 11px;
+          font-weight: 900;
+          text-transform: uppercase;
+        }
+        .structure-unit-copy h4 {
+          margin: 10px 0 7px;
+          color: var(--brand-navy);
+          font-size: 16px;
+          line-height: 1.25;
+        }
+        .structure-unit-copy p {
+          margin: 0;
+          color: #475467;
+          font-size: 14px;
+          line-height: 1.5;
+        }
+        .structure-unit-copy small {
+          display: inline-flex;
+          margin-top: 12px;
+          color: var(--muted);
+          font-size: 12px;
+          font-weight: 800;
+        }
+        @media (max-width: 640px) {
+          .structure-unit-card {
+            grid-template-columns: 1fr;
+          }
+        }
+      `}</style>
     </>
   );
 }
