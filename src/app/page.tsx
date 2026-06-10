@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { KpiCard } from '@/components/KpiCard';
-import { PresenceMapViewer } from '@/components/PresenceMapViewer';
 import { publicAssetPath } from '@/lib/deploy';
 
 const missionCards = [
@@ -45,7 +44,7 @@ const structureUnits = [
     acronym: 'ИС',
     name: 'Институт социологии ФНИСЦ РАН',
     role: 'социальная структура, динамика общества, методология и история социологии',
-    logo: '/brand/units/institute-sociology.svg',
+    logo: '/brand/units/institute-sociology.png',
     href: 'https://www.isras.ru/'
   },
   {
@@ -53,7 +52,7 @@ const structureUnits = [
     acronym: 'ИСД',
     name: 'Институт социальной демографии ФНИСЦ РАН',
     role: 'демографическое развитие, семейная политика, поколения и социальное самочувствие',
-    logo: '/brand/units/social-demography.svg',
+    logo: '/brand/units/social-demography.png',
     href: 'https://isd-ras.ru/'
   },
   {
@@ -61,7 +60,7 @@ const structureUnits = [
     acronym: 'ИСПИ',
     name: 'Институт социально-политических исследований ФНИСЦ РАН',
     role: 'социально-политические процессы, молодёжь, риски, гражданская и ценностная динамика',
-    logo: '/brand/units/ispi.svg',
+    logo: '/brand/units/ispi.png',
     href: 'https://испи.рф/'
   },
   {
@@ -69,7 +68,7 @@ const structureUnits = [
     acronym: 'ИСЭПН',
     name: 'Институт социально-экономических проблем народонаселения имени Н. М. Римашевской ФНИСЦ РАН',
     role: 'качество жизни, человеческий потенциал, благосостояние и социально-экономическое неравенство',
-    logo: '/brand/units/isepn.svg',
+    logo: '/brand/units/isepn.png',
     href: 'https://www.isesp-ras.ru/'
   },
   {
@@ -77,7 +76,7 @@ const structureUnits = [
     acronym: 'СИ РАН',
     name: 'Социологический институт РАН — филиал ФНИСЦ РАН',
     role: 'социологические исследования, научная школа и экспертная повестка Северо-Запада',
-    logo: '/brand/units/sociological-institute.svg',
+    logo: '/brand/units/sociological-institute.png',
     href: 'https://socinst.ru/'
   },
   {
@@ -175,7 +174,20 @@ export default function HomePage() {
           </p>
         </div>
         <div className="presence-layout">
-          <PresenceMapViewer />
+          <figure className="presence-map-card">
+            <Image
+              className="presence-map"
+              src={publicAssetPath('/maps/fnisc-presence-map.svg')}
+              alt="Карта европейской части России с отмеченными городами присутствия ФНИСЦ РАН"
+              width={1200}
+              height={700}
+              sizes="(max-width: 900px) 100vw, 68vw"
+              unoptimized
+            />
+            <figcaption>
+              Карта сфокусирована на европейской части России: видны все города присутствия институтов и филиалов ФНИСЦ РАН.
+            </figcaption>
+          </figure>
           <aside className="presence-note" aria-label="Расшифровка карты">
             <h3>Узлы присутствия</h3>
             <div className="presence-list">
