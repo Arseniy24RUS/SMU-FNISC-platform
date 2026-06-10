@@ -36,63 +36,72 @@ const structureUnits = [
     acronym: 'ФНИСЦ РАН',
     name: 'Федеральный научно-исследовательский социологический центр РАН',
     role: 'головная организация, объединяющая исследовательские направления и филиальную сеть',
-    logo: '/brand/fnisc-logo.png'
+    logo: '/brand/fnisc-logo.png',
+    href: 'https://www.fnisc.ru/'
   },
   {
     city: 'Москва',
     acronym: 'ИС',
     name: 'Институт социологии ФНИСЦ РАН',
     role: 'социальная структура, динамика общества, методология и история социологии',
-    logo: '/brand/units/institute-sociology.svg'
+    logo: '/brand/units/institute-sociology.svg',
+    href: 'https://www.isras.ru/'
   },
   {
     city: 'Москва',
     acronym: 'ИСД',
     name: 'Институт социальной демографии ФНИСЦ РАН',
     role: 'демографическое развитие, семейная политика, поколения и социальное самочувствие',
-    logo: '/brand/units/social-demography.svg'
+    logo: '/brand/units/social-demography.svg',
+    href: 'https://idrras.ru/'
   },
   {
     city: 'Москва',
     acronym: 'ИСПИ',
     name: 'Институт социально-политических исследований ФНИСЦ РАН',
     role: 'социально-политические процессы, молодёжь, риски, гражданская и ценностная динамика',
-    logo: '/brand/units/ispi.svg'
+    logo: '/brand/units/ispi.svg',
+    href: 'https://испи.рф/'
   },
   {
     city: 'Москва',
     acronym: 'ИСЭПН',
     name: 'Институт социально-экономических проблем народонаселения имени Н. М. Римашевской ФНИСЦ РАН',
     role: 'качество жизни, человеческий потенциал, благосостояние и социально-экономическое неравенство',
-    logo: '/brand/units/isepn.svg'
+    logo: '/brand/units/isepn.svg',
+    href: 'https://www.isesp-ras.ru/'
   },
   {
     city: 'Санкт-Петербург',
     acronym: 'СИ РАН',
     name: 'Социологический институт РАН — филиал ФНИСЦ РАН',
     role: 'социологические исследования, научная школа и экспертная повестка Северо-Запада',
-    logo: '/brand/units/sociological-institute.svg'
+    logo: '/brand/units/sociological-institute.svg',
+    href: 'https://socinst.ru/'
   },
   {
     city: 'Симферополь',
     acronym: 'Крымский филиал',
     name: 'Крымский филиал ФНИСЦ РАН',
     role: 'региональная исследовательская площадка ФНИСЦ РАН в Крыму',
-    logo: '/brand/fnisc-logo.png'
+    logo: '/brand/fnisc-logo.png',
+    href: 'https://www.fnisc.ru/index.php?page_id=2522'
   },
   {
     city: 'Нальчик',
     acronym: 'Северо-Кавказский филиал',
     name: 'Северо-Кавказский филиал ФНИСЦ РАН',
     role: 'региональная исследовательская площадка ФНИСЦ РАН на Северном Кавказе',
-    logo: '/brand/fnisc-logo.png'
+    logo: '/brand/fnisc-logo.png',
+    href: 'https://www.fnisc.ru/index.php?page_id=2522'
   },
   {
     city: 'Ростов-на-Дону',
     acronym: 'Южно-Российский филиал',
     name: 'Южно-Российский филиал ФНИСЦ РАН',
     role: 'региональная исследовательская площадка ФНИСЦ РАН на Юге России',
-    logo: '/brand/fnisc-logo.png'
+    logo: '/brand/fnisc-logo.png',
+    href: 'https://www.fnisc.ru/index.php?page_id=2522'
   }
 ];
 
@@ -165,19 +174,20 @@ export default function HomePage() {
           </p>
         </div>
         <div className="presence-layout">
-          <figure className="presence-map-card">
-            <Image
-              className="presence-map"
-              src={publicAssetPath('/maps/fnisc-presence-map.svg')}
-              alt="Карта субъектов Российской Федерации с отмеченными городами присутствия ФНИСЦ РАН"
-              width={1200}
-              height={620}
-              sizes="(max-width: 900px) 100vw, 68vw"
-              unoptimized
-            />
+          <figure className="presence-map-card presence-map-card--zoomed">
+            <div className="presence-map-zoom" aria-hidden="true">
+              <Image
+                className="presence-map"
+                src={publicAssetPath('/maps/fnisc-presence-map.svg')}
+                alt="Карта субъектов Российской Федерации с отмеченными городами присутствия ФНИСЦ РАН"
+                width={1200}
+                height={620}
+                sizes="(max-width: 900px) 100vw, 68vw"
+                unoptimized
+              />
+            </div>
             <figcaption>
-              Карта показывает города присутствия ФНИСЦ РАН и помогает увидеть СМУ как сообщество, связанное не
-              одной площадкой, а общей институциональной и исследовательской рамкой.
+              Карта сфокусирована на европейской части России, где расположены все отмеченные подразделения ФНИСЦ РАН.
             </figcaption>
           </figure>
           <aside className="presence-note" aria-label="Расшифровка карты">
@@ -207,66 +217,93 @@ export default function HomePage() {
             проектного взаимодействия молодых исследователей.
           </p>
         </div>
-        <div className="structure-grid">
-          <article className="structure-card structure-card--full">
-            <div className="structure-unit-grid">
-              {structureUnits.map((unit) => (
-                <article className="structure-unit-card" key={`${unit.city}-${unit.acronym}`}>
-                  <div className="structure-unit-logo">
-                    <Image
-                      src={publicAssetPath(unit.logo)}
-                      alt={`Логотип: ${unit.name}`}
-                      width={160}
-                      height={160}
-                      sizes="96px"
-                      unoptimized
-                    />
-                  </div>
-                  <div className="structure-unit-copy">
-                    <span className="structure-unit-city">{unit.city}</span>
-                    <h4>{unit.name}</h4>
-                    <p>{unit.role}</p>
-                    <small>{unit.acronym}</small>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </article>
-        </div>
+        <article className="structure-card structure-card--list">
+          <div className="structure-unit-list">
+            {structureUnits.map((unit) => (
+              <article className="structure-unit-row" key={`${unit.city}-${unit.acronym}`}>
+                <a
+                  className="structure-unit-logo-link"
+                  href={unit.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`Открыть официальный сайт: ${unit.name}`}
+                >
+                  <Image
+                    src={publicAssetPath(unit.logo)}
+                    alt={`Логотип: ${unit.name}`}
+                    width={160}
+                    height={160}
+                    sizes="96px"
+                    unoptimized
+                  />
+                </a>
+                <div className="structure-unit-copy">
+                  <span className="structure-unit-city">{unit.city}</span>
+                  <h4>
+                    <a href={unit.href} target="_blank" rel="noreferrer">
+                      {unit.name}
+                    </a>
+                  </h4>
+                  <p>{unit.role}</p>
+                  <small>{unit.acronym}</small>
+                </div>
+              </article>
+            ))}
+          </div>
+        </article>
       </section>
 
       <style>{`
-        .structure-card--full {
-          grid-column: 1 / -1;
+        .presence-map-card--zoomed {
+          overflow: hidden;
+        }
+        .presence-map-zoom {
+          overflow: hidden;
+          background: #f7f9fc;
+        }
+        .presence-map-card--zoomed .presence-map {
+          transform: scale(1.72);
+          transform-origin: 23% 56%;
+        }
+        .structure-card--list {
           padding: clamp(18px, 3vw, 28px);
         }
-        .structure-card--full .structure-unit-grid {
+        .structure-unit-list {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-          gap: 16px;
+          gap: 14px;
         }
-        .structure-unit-card {
+        .structure-unit-row {
           display: grid;
-          grid-template-columns: 94px minmax(0, 1fr);
-          gap: 16px;
+          grid-template-columns: 110px minmax(0, 1fr);
+          gap: 18px;
           align-items: start;
-          min-height: 172px;
-          padding: 18px;
-          border: 1px solid #edf1f6;
-          border-radius: var(--radius-md);
-          background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+          padding: 18px 0;
+          border-top: 1px solid #edf1f6;
         }
-        .structure-unit-logo {
+        .structure-unit-row:first-child {
+          padding-top: 0;
+          border-top: 0;
+        }
+        .structure-unit-row:last-child {
+          padding-bottom: 0;
+        }
+        .structure-unit-logo-link {
           display: grid;
           place-items: center;
-          width: 94px;
-          height: 94px;
+          width: 96px;
+          height: 96px;
           padding: 10px;
+          border: 1px solid rgba(184, 164, 108, .32);
           border-radius: var(--radius-md);
           background: white;
-          border: 1px solid rgba(184, 164, 108, .28);
+          transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease;
         }
-        .structure-unit-logo img {
+        .structure-unit-logo-link:hover {
+          border-color: rgba(41, 109, 193, .45);
+          box-shadow: var(--shadow-soft);
+          transform: translateY(-1px);
+        }
+        .structure-unit-logo-link img {
           display: block;
           width: 100%;
           height: 100%;
@@ -290,14 +327,18 @@ export default function HomePage() {
         .structure-unit-copy h4 {
           margin: 10px 0 7px;
           color: var(--brand-navy);
-          font-size: 16px;
+          font-size: 18px;
           line-height: 1.25;
+        }
+        .structure-unit-copy h4 a:hover {
+          color: var(--brand-blue);
         }
         .structure-unit-copy p {
           margin: 0;
+          max-width: 760px;
           color: #475467;
-          font-size: 14px;
-          line-height: 1.5;
+          font-size: 15px;
+          line-height: 1.55;
         }
         .structure-unit-copy small {
           display: inline-flex;
@@ -307,7 +348,7 @@ export default function HomePage() {
           font-weight: 800;
         }
         @media (max-width: 640px) {
-          .structure-unit-card {
+          .structure-unit-row {
             grid-template-columns: 1fr;
           }
         }
