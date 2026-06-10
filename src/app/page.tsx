@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { KpiCard } from '@/components/KpiCard';
-import { SectionCard } from '@/components/SectionCard';
 import { publicAssetPath } from '@/lib/deploy';
 
 const missionCards = [
@@ -23,29 +22,6 @@ const missionCards = [
   }
 ];
 
-const moscowInstitutes = [
-  {
-    acronym: 'ИС',
-    name: 'Институт социологии РАН',
-    focus: 'социальная структура, динамика общества, методология и история социологии'
-  },
-  {
-    acronym: 'ИСД',
-    name: 'Институт социальной демографии РАН',
-    focus: 'демографическое развитие, семейная политика, поколения и социальное самочувствие'
-  },
-  {
-    acronym: 'ИСПИ',
-    name: 'Институт социально-политических исследований РАН',
-    focus: 'социально-политические процессы, молодёжь, риски, гражданская и ценностная динамика'
-  },
-  {
-    acronym: 'ИСЭПН',
-    name: 'Институт социально-экономических проблем народонаселения им. Н. М. Римашевской РАН',
-    focus: 'качество жизни, человеческий потенциал, благосостояние и социально-экономическое неравенство'
-  }
-];
-
 const territorialNodes = [
   { number: '1', city: 'Москва', unit: 'центральная площадка и московские институты ФНИСЦ РАН' },
   { number: '2', city: 'Санкт-Петербург', unit: 'Социологический институт РАН — филиал ФНИСЦ РАН' },
@@ -54,42 +30,69 @@ const territorialNodes = [
   { number: '5', city: 'Ростов-на-Дону', unit: 'Южно-Российский филиал ФНИСЦ РАН' }
 ];
 
-const platformSections = [
+const structureUnits = [
   {
-    title: 'Новости',
-    href: '/media',
-    eyebrow: 'Публичность',
-    text: 'Редакционная витрина событий, выступлений, комментариев и экспертного присутствия молодых исследователей.'
+    city: 'Москва',
+    acronym: 'ФНИСЦ РАН',
+    name: 'Федеральный научно-исследовательский социологический центр РАН',
+    role: 'головная организация, объединяющая исследовательские направления и филиальную сеть',
+    logo: '/brand/fnisc-logo.png'
   },
   {
-    title: 'Мероприятия',
-    href: '/events',
-    eyebrow: 'Научная среда',
-    text: 'Конференции, семинары, школы, заседания и другие форматы академической коммуникации.'
+    city: 'Москва',
+    acronym: 'ИС',
+    name: 'Институт социологии ФНИСЦ РАН',
+    role: 'социальная структура, динамика общества, методология и история социологии',
+    logo: '/brand/units/institute-sociology.svg'
   },
   {
-    title: 'Участники',
-    href: '/members',
-    eyebrow: 'Сообщество',
-    text: 'Публичные профили молодых учёных, их научные интересы, институциональная принадлежность и контакты.'
+    city: 'Москва',
+    acronym: 'ИСД',
+    name: 'Институт социальной демографии ФНИСЦ РАН',
+    role: 'демографическое развитие, семейная политика, поколения и социальное самочувствие',
+    logo: '/brand/units/social-demography.svg'
   },
   {
-    title: 'Публикации',
-    href: '/publications',
-    eyebrow: 'Результаты',
-    text: 'Собранная витрина публикационной активности, пригодная для навигации, сверки и последующего развития.'
+    city: 'Москва',
+    acronym: 'ИСПИ',
+    name: 'Институт социально-политических исследований ФНИСЦ РАН',
+    role: 'социально-политические процессы, молодёжь, риски, гражданская и ценностная динамика',
+    logo: '/brand/units/ispi.svg'
   },
   {
-    title: 'Карьера',
-    href: '/career',
-    eyebrow: 'Траектории',
-    text: 'Понятная карта академических шагов: публикации, диссертации, звания, научные школы и признание.'
+    city: 'Москва',
+    acronym: 'ИСЭПН',
+    name: 'Институт социально-экономических проблем народонаселения имени Н. М. Римашевской ФНИСЦ РАН',
+    role: 'качество жизни, человеческий потенциал, благосостояние и социально-экономическое неравенство',
+    logo: '/brand/units/isepn.svg'
   },
   {
-    title: 'Меры поддержки',
-    href: '/support',
-    eyebrow: 'Возможности',
-    text: 'Гранты, конкурсы, программы мобильности и институциональные инструменты развития молодых исследователей.'
+    city: 'Санкт-Петербург',
+    acronym: 'СИ РАН',
+    name: 'Социологический институт РАН — филиал ФНИСЦ РАН',
+    role: 'социологические исследования, научная школа и экспертная повестка Северо-Запада',
+    logo: '/brand/units/sociological-institute.svg'
+  },
+  {
+    city: 'Симферополь',
+    acronym: 'Крымский филиал',
+    name: 'Крымский филиал ФНИСЦ РАН',
+    role: 'региональная исследовательская площадка ФНИСЦ РАН в Крыму',
+    logo: '/brand/fnisc-logo.png'
+  },
+  {
+    city: 'Нальчик',
+    acronym: 'Северо-Кавказский филиал',
+    name: 'Северо-Кавказский филиал ФНИСЦ РАН',
+    role: 'региональная исследовательская площадка ФНИСЦ РАН на Северном Кавказе',
+    logo: '/brand/fnisc-logo.png'
+  },
+  {
+    city: 'Ростов-на-Дону',
+    acronym: 'Южно-Российский филиал',
+    name: 'Южно-Российский филиал ФНИСЦ РАН',
+    role: 'региональная исследовательская площадка ФНИСЦ РАН на Юге России',
+    logo: '/brand/fnisc-logo.png'
   }
 ];
 
@@ -127,8 +130,8 @@ export default function HomePage() {
       <section className="home-kpis home-shell" aria-label="Ключевые характеристики СМУ ФНИСЦ РАН">
         <KpiCard label="Статус" value="СМУ" hint="профессиональное объединение молодых исследователей" />
         <KpiCard label="Профиль" value="социальные науки" hint="социология, демография, социальная политика и смежные направления" />
-        <KpiCard label="Москва" value="4 института" hint="несколько научных площадок в одном городском контуре" />
-        <KpiCard label="Филиальная сеть" value="4 узла" hint="Санкт-Петербург, Крым, Северный Кавказ и Юг России" />
+        <KpiCard label="География" value="5 городов" hint="Москва, Санкт-Петербург, Симферополь, Нальчик и Ростов-на-Дону" />
+        <KpiCard label="Структура" value="9 узлов" hint="центр, институты и филиалы в едином поле СМУ" />
       </section>
 
       <section className="home-section home-shell">
@@ -173,9 +176,8 @@ export default function HomePage() {
               unoptimized
             />
             <figcaption>
-              Карта показывает территориальные узлы присутствия; московские институты раскрыты отдельным
-              структурным блоком, поскольку находятся в одном городе, но представляют разные исследовательские
-              направления.
+              Карта показывает города присутствия ФНИСЦ РАН и помогает увидеть СМУ как сообщество, связанное не
+              одной площадкой, а общей институциональной и исследовательской рамкой.
             </figcaption>
           </figure>
           <aside className="presence-note" aria-label="Расшифровка карты">
@@ -198,62 +200,38 @@ export default function HomePage() {
       <section className="home-section home-shell">
         <div className="home-section-heading">
           <span className="eyebrow">Структура</span>
-          <h2>Как устроено институциональное поле СМУ</h2>
+          <h2>Институты и филиалы ФНИСЦ РАН в едином списке</h2>
           <p>
-            Для публичной страницы важно разделить два уровня: московские институты ФНИСЦ РАН, которые визуально
-            трудно развести на общефедеральной карте, и филиальную сеть, задающую территориальную широту Совета.
+            СМУ формируется внутри общей институциональной рамки ФНИСЦ РАН: московские институты, головной центр
+            и территориальные филиалы образуют единое пространство научной коммуникации, кадрового развития и
+            проектного взаимодействия молодых исследователей.
           </p>
         </div>
         <div className="structure-grid">
-          <article className="structure-card structure-card--accent">
-            <span className="structure-label">Московский контур</span>
-            <h3>Институты ФНИСЦ РАН в Москве</h3>
-            <div className="unit-list">
-              {moscowInstitutes.map((unit) => (
-                <div className="unit-row" key={unit.acronym}>
-                  <strong>{unit.acronym}</strong>
-                  <div>
-                    <h4>{unit.name}</h4>
-                    <p>{unit.focus}</p>
+          <article className="structure-card structure-card--full">
+            <div className="structure-unit-grid">
+              {structureUnits.map((unit) => (
+                <article className="structure-unit-card" key={`${unit.city}-${unit.acronym}`}>
+                  <div className="structure-unit-logo">
+                    <Image
+                      src={publicAssetPath(unit.logo)}
+                      alt={`Логотип: ${unit.name}`}
+                      width={160}
+                      height={160}
+                      sizes="96px"
+                      unoptimized
+                    />
                   </div>
-                </div>
+                  <div className="structure-unit-copy">
+                    <span className="structure-unit-city">{unit.city}</span>
+                    <h4>{unit.name}</h4>
+                    <p>{unit.role}</p>
+                    <small>{unit.acronym}</small>
+                  </div>
+                </article>
               ))}
             </div>
           </article>
-          <article className="structure-card">
-            <span className="structure-label">Филиальная сеть</span>
-            <h3>Территориальные площадки</h3>
-            <p>
-              Филиалы расширяют исследовательскую оптику ФНИСЦ РАН: они связывают федеральную повестку с
-              региональными обществами, локальными данными, научными школами и экспертными коммуникациями.
-            </p>
-            <div className="branch-list">
-              {territorialNodes.slice(1).map((node) => (
-                <div key={node.city}>
-                  <strong>{node.city}</strong>
-                  <span>{node.unit}</span>
-                </div>
-              ))}
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section className="home-section home-shell">
-        <div className="home-section-heading">
-          <span className="eyebrow">Платформа</span>
-          <h2>Публичная витрина СМУ ФНИСЦ РАН</h2>
-          <p>
-            Сайт должен работать как устойчивая информационная страница Совета и как навигация по живым разделам:
-            участникам, событиям, публикациям, карьерным ориентирам и мерам поддержки.
-          </p>
-        </div>
-        <div className="grid">
-          {platformSections.map((section) => (
-            <SectionCard key={section.href} title={section.title} href={section.href} eyebrow={section.eyebrow}>
-              <p>{section.text}</p>
-            </SectionCard>
-          ))}
         </div>
       </section>
     </>
