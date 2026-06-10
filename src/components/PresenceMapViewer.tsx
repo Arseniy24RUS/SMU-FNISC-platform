@@ -26,10 +26,10 @@ const MAX_SCALE = 4.5;
 const ZOOM_STEP = 1.22;
 
 const DEFAULT_BOUNDS = {
-  x: 80,
-  y: 132,
-  width: 610,
-  height: 360
+  x: 70,
+  y: 78,
+  width: 650,
+  height: 390
 };
 
 const INITIAL_TRANSFORM: Transform = {
