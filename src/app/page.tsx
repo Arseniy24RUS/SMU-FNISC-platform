@@ -53,7 +53,7 @@ const structureUnits = [
     name: 'Институт социальной демографии ФНИСЦ РАН',
     role: 'демографическое развитие, семейная политика, поколения и социальное самочувствие',
     logo: '/brand/units/social-demography.svg',
-    href: 'https://idrras.ru/'
+    href: 'https://isd-ras.ru/'
   },
   {
     city: 'Москва',
@@ -175,7 +175,7 @@ export default function HomePage() {
         </div>
         <div className="presence-layout">
           <figure className="presence-map-card presence-map-card--zoomed">
-            <div className="presence-map-zoom" aria-hidden="true">
+            <div className="presence-map-zoom">
               <Image
                 className="presence-map"
                 src={publicAssetPath('/maps/fnisc-presence-map.svg')}
