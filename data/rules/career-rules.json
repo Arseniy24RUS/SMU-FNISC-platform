@@ -1,0 +1,405 @@
+{
+  "version": "0.3.0",
+  "updated_at": "2026-06-09",
+  "default_profile": "social_humanitarian",
+  "disclaimer": "Карьерная карта является продуктовой моделью навигации по требованиям, а не юридическим заключением. Перед формальным представлением документов требования нужно сверять с актуальными НПА, паспортом научной специальности, локальными правилами организации и диссертационного совета.",
+  "sources": [
+    {
+      "key": "degree_award_rules",
+      "title": "Постановление Правительства РФ № 842: порядок присуждения ученых степеней",
+      "url": "https://legalacts.ru/doc/postanovlenie-pravitelstva-rf-ot-24092013-n-842/"
+    },
+    {
+      "key": "academic_title_rules_1746",
+      "title": "Постановление Правительства РФ № 1746: порядок присвоения ученых званий",
+      "url": "https://legalacts.ru/doc/postanovlenie-pravitelstva-rf-ot-20102023-n-1746-o-porjadke/"
+    },
+    {
+      "key": "vak_specialties",
+      "title": "Номенклатура научных специальностей и перечни ВАК",
+      "url": "https://vak.minobrnauki.gov.ru/"
+    },
+    {
+      "key": "ras_professor_2025",
+      "title": "Положение о звании «Профессор РАН», постановление Президиума РАН № 99 от 20.05.2025 с актуальными изменениями",
+      "url": "https://base.garant.ru/412080012/53f89421bbdaf741eb2d1ecc4ddb4c33/"
+    },
+    {
+      "key": "ras_membership_rules",
+      "title": "Устав РАН и порядок выборов членов Российской академии наук",
+      "url": "https://www.ras.ru/about/rascharter.aspx"
+    }
+  ],
+  "profiles": {
+    "social_humanitarian": {
+      "label": "Социально-гуманитарные науки",
+      "description": "Базовый профиль портала ФНИСЦ РАН.",
+      "metrics": {
+        "candidate_publications_by_specialty": 3,
+        "doctor_publications_total": 15
+      }
+    },
+    "general": {
+      "label": "Остальные отрасли науки",
+      "description": "Конфигурируемая ветка для научных специальностей, где публикационные минимумы ниже.",
+      "metrics": {
+        "candidate_publications_by_specialty": 2,
+        "doctor_publications_total": 10
+      }
+    },
+    "arts": {
+      "label": "Искусствоведение и творческие специальности",
+      "enabled": false,
+      "description": "Исключения не включены в основной путь СМУ ФНИСЦ, но должны храниться отдельно перед production-настройкой."
+    },
+    "sports": {
+      "label": "Физическая культура и спорт",
+      "enabled": false,
+      "description": "Исключения не включены в основной путь СМУ ФНИСЦ, но должны храниться отдельно перед production-настройкой."
+    }
+  },
+  "milestones": [
+    {
+      "key": "master_or_specialist",
+      "label": "Магистратура / специалитет",
+      "layer": "degree",
+      "track": "base",
+      "order": 10,
+      "description": "Базовая образовательная ступень для поступления в аспирантуру, прикрепления к организации и дальнейшей научной карьеры.",
+      "requires": [],
+      "legal_basis": ["degree_award_rules"],
+      "evidence_required": ["диплом магистра или специалиста"],
+      "manual_verification": true
+    },
+    {
+      "key": "postgraduate_or_attachment",
+      "label": "Аспирантура или прикрепление к организации",
+      "layer": "degree",
+      "track": "base",
+      "order": 20,
+      "description": "Организационная форма подготовки кандидатской диссертации: аспирантура либо прикрепление к организации для подготовки диссертации и сдачи экзаменов.",
+      "requires": ["master_or_specialist"],
+      "legal_basis": ["degree_award_rules"],
+      "evidence_required": ["приказ о зачислении в аспирантуру или прикреплении"],
+      "manual_verification": true
+    },
+    {
+      "key": "candidate_exams",
+      "label": "Кандидатские экзамены",
+      "layer": "degree",
+      "track": "candidate",
+      "order": 30,
+      "description": "Формальное условие допуска к защите кандидатской диссертации.",
+      "requires": ["master_or_specialist"],
+      "legal_basis": ["degree_award_rules"],
+      "evidence_required": ["справка о сдаче кандидатских экзаменов"],
+      "manual_verification": true
+    },
+    {
+      "key": "candidate_publication_minimum",
+      "label": "Публикационный минимум кандидатской диссертации",
+      "layer": "degree",
+      "track": "candidate",
+      "order": 40,
+      "description": "Публикации в рецензируемых научных изданиях по одной научной специальности. Для социально-гуманитарного профиля используется порог 3 публикации; для остальных отраслей — конфигурируемый порог профиля.",
+      "requires": ["master_or_specialist"],
+      "legal_basis": ["degree_award_rules", "vak_specialties"],
+      "evidence_required": ["публикации ВАК по научной специальности"],
+      "profile_metric": "candidate_publications_by_specialty"
+    },
+    {
+      "key": "candidate_dissertation_defense",
+      "label": "Защита кандидатской диссертации",
+      "layer": "degree",
+      "track": "candidate",
+      "order": 50,
+      "description": "Защита диссертации в диссертационном совете после выполнения публикационных и процедурных условий.",
+      "requires": ["candidate_exams", "candidate_publication_minimum"],
+      "legal_basis": ["degree_award_rules"],
+      "evidence_required": ["решение диссертационного совета", "автореферат", "заключение организации"],
+      "manual_verification": true
+    },
+    {
+      "key": "candidate_degree",
+      "label": "Кандидат наук",
+      "layer": "degree",
+      "track": "candidate",
+      "order": 60,
+      "description": "Учёная степень кандидата наук фиксируется по подтверждённым данным профиля, ФНИСЦ, ВАК или ручной проверке.",
+      "requires": ["candidate_dissertation_defense"],
+      "legal_basis": ["degree_award_rules"],
+      "evidence_required": ["диплом кандидата наук"],
+      "manual_verification": true
+    },
+    {
+      "key": "doctor_topic",
+      "label": "Тема докторской диссертации",
+      "layer": "degree",
+      "track": "doctor",
+      "parallel_track": "doctor",
+      "order": 70,
+      "description": "Старт докторской траектории после кандидатской степени. Работа над докторской диссертацией не зависит от оформления звания доцента и может идти параллельно.",
+      "requires": ["candidate_degree"],
+      "legal_basis": ["degree_award_rules"],
+      "evidence_required": ["тема докторской диссертации", "связь публикаций с темой"],
+      "manual_verification": true
+    },
+    {
+      "key": "doctor_publication_minimum",
+      "label": "Публикационный минимум докторской диссертации",
+      "layer": "degree",
+      "track": "doctor",
+      "parallel_track": "doctor",
+      "order": 80,
+      "description": "Публикации по теме докторской диссертации. Для социально-гуманитарного профиля используется порог 15 публикаций; для остальных отраслей — конфигурируемый порог профиля.",
+      "requires": ["candidate_degree"],
+      "legal_basis": ["degree_award_rules", "vak_specialties"],
+      "evidence_required": ["профильные публикации по теме докторской диссертации"],
+      "profile_metric": "doctor_publications_total"
+    },
+    {
+      "key": "doctor_dissertation_council",
+      "label": "Диссертационный совет по докторской",
+      "layer": "degree",
+      "track": "doctor",
+      "parallel_track": "doctor",
+      "order": 90,
+      "description": "Проверка специальности, организации, совета и комплекта документов для докторской защиты.",
+      "requires": ["candidate_degree"],
+      "legal_basis": ["degree_award_rules"],
+      "evidence_required": ["диссертационный совет", "специальность", "комплект документов"],
+      "manual_verification": true
+    },
+    {
+      "key": "doctor_dissertation_defense",
+      "label": "Защита докторской диссертации",
+      "layer": "degree",
+      "track": "doctor",
+      "parallel_track": "doctor",
+      "order": 100,
+      "description": "Защита докторской диссертации после выполнения публикационных и процедурных условий.",
+      "requires": ["doctor_publication_minimum", "doctor_dissertation_council"],
+      "legal_basis": ["degree_award_rules"],
+      "evidence_required": ["решение диссертационного совета", "заключение ВАК"],
+      "manual_verification": true
+    },
+    {
+      "key": "doctor_degree",
+      "label": "Доктор наук",
+      "layer": "degree",
+      "track": "doctor",
+      "parallel_track": "doctor",
+      "order": 110,
+      "description": "Учёная степень доктора наук фиксируется как проверяемый milestone.",
+      "requires": ["doctor_dissertation_defense"],
+      "legal_basis": ["degree_award_rules"],
+      "evidence_required": ["диплом доктора наук"],
+      "manual_verification": true
+    },
+    {
+      "key": "docent_position_and_load",
+      "label": "Должность и педагогическая нагрузка для доцента",
+      "layer": "academic_title",
+      "track": "docent",
+      "parallel_track": "docent",
+      "order": 75,
+      "description": "Для звания доцента по научной специальности нужна подходящая должность, 2 года непрерывной работы в ней и педагогическая деятельность не менее 0,25 ставки.",
+      "requires": ["candidate_degree"],
+      "legal_basis": ["academic_title_rules_1746"],
+      "evidence_required": ["приказ о должности", "подтверждение педагогической нагрузки"],
+      "metrics": {
+        "continuous_position_years": 2,
+        "pedagogical_load_fraction": 0.25
+      },
+      "manual_verification": true
+    },
+    {
+      "key": "docent_experience",
+      "label": "Стаж для звания доцента",
+      "layer": "academic_title",
+      "track": "docent",
+      "parallel_track": "docent",
+      "order": 85,
+      "description": "Требуется не менее 5 лет научно-педагогического стажа, из них не менее 3 лет педагогического стажа по научной специальности.",
+      "requires": ["candidate_degree"],
+      "legal_basis": ["academic_title_rules_1746"],
+      "evidence_required": ["подтверждение научно-педагогического стажа", "периоды преподавания"],
+      "metrics": {
+        "scientific_pedagogical_years": 5,
+        "teaching_years": 3
+      }
+    },
+    {
+      "key": "docent_publications_and_editions",
+      "label": "Учебные издания и научные труды для доцента",
+      "layer": "academic_title",
+      "track": "docent",
+      "parallel_track": "docent",
+      "order": 95,
+      "description": "Для звания доцента учитываются учебные издания и научные труды: 20 всего, за последние 3 года — 2 учебных издания и 3 научных труда.",
+      "requires": ["candidate_degree"],
+      "legal_basis": ["academic_title_rules_1746"],
+      "evidence_required": ["список учебных изданий", "список научных трудов"],
+      "metrics": {
+        "works_total": 20,
+        "educational_editions_recent_3y": 2,
+        "scientific_works_recent_3y": 3
+      }
+    },
+    {
+      "key": "docent_attestation_case",
+      "label": "Аттестационное дело доцента",
+      "layer": "academic_title",
+      "track": "docent",
+      "parallel_track": "docent",
+      "order": 105,
+      "description": "Формирование и представление аттестационного дела на присвоение учёного звания доцента.",
+      "requires": ["docent_position_and_load", "docent_experience", "docent_publications_and_editions"],
+      "legal_basis": ["academic_title_rules_1746"],
+      "evidence_required": ["аттестационное дело", "решение ученого совета организации"],
+      "manual_verification": true
+    },
+    {
+      "key": "docent_title",
+      "label": "Учёное звание доцента",
+      "layer": "academic_title",
+      "track": "docent",
+      "parallel_track": "docent",
+      "order": 115,
+      "description": "Учёное звание доцента фиксируется как отдельный milestone. Оно не является условием работы над докторской диссертацией, но обязательно для последующего звания профессора.",
+      "requires": ["docent_attestation_case"],
+      "legal_basis": ["academic_title_rules_1746"],
+      "evidence_required": ["аттестат доцента"],
+      "manual_verification": true
+    },
+    {
+      "key": "professor_join_gate",
+      "label": "Условия входа в профессорский трек",
+      "layer": "academic_title",
+      "track": "professor",
+      "order": 120,
+      "description": "Учёное звание профессора открывается только при сочетании двух условий: доктор наук и доцент. После присвоения доцента должно пройти не менее 3 лет.",
+      "requires": ["doctor_degree", "docent_title"],
+      "legal_basis": ["academic_title_rules_1746"],
+      "evidence_required": ["диплом доктора наук", "аттестат доцента", "дата присвоения доцента"],
+      "metrics": {
+        "docent_title_age_years": 3
+      },
+      "join_gate": true
+    },
+    {
+      "key": "professor_position_and_load",
+      "label": "Должность и педагогическая нагрузка для профессора",
+      "layer": "academic_title",
+      "track": "professor",
+      "order": 130,
+      "description": "Для звания профессора нужна подходящая должность, 2 года непрерывной работы в ней и педагогическая деятельность не менее 0,25 ставки.",
+      "requires": ["professor_join_gate"],
+      "legal_basis": ["academic_title_rules_1746"],
+      "evidence_required": ["приказ о должности", "подтверждение педагогической нагрузки"],
+      "metrics": {
+        "continuous_position_years": 2,
+        "pedagogical_load_fraction": 0.25
+      },
+      "manual_verification": true
+    },
+    {
+      "key": "professor_experience",
+      "label": "Стаж для звания профессора",
+      "layer": "academic_title",
+      "track": "professor",
+      "order": 140,
+      "description": "Требуется не менее 10 лет научно-педагогического стажа, из них не менее 5 лет педагогического стажа по научной специальности.",
+      "requires": ["professor_join_gate"],
+      "legal_basis": ["academic_title_rules_1746"],
+      "evidence_required": ["подтверждение научно-педагогического стажа", "периоды преподавания"],
+      "metrics": {
+        "scientific_pedagogical_years": 10,
+        "teaching_years": 5
+      }
+    },
+    {
+      "key": "professor_publications_training",
+      "label": "Труды, учебные издания и подготовка кадров для профессора",
+      "layer": "academic_title",
+      "track": "professor",
+      "order": 150,
+      "description": "Для звания профессора учитываются 50 учебных изданий и научных трудов всего; за последние 5 лет — 3 учебных издания и 5 научных трудов; за последние 10 лет — учебник или 3 учебных пособия; также учитывается подготовка защитившихся соискателей.",
+      "requires": ["professor_join_gate"],
+      "legal_basis": ["academic_title_rules_1746"],
+      "evidence_required": ["список трудов", "учебник или учебные пособия", "подтверждение подготовленных защитившихся"],
+      "metrics": {
+        "works_total": 50,
+        "educational_editions_recent_5y": 3,
+        "scientific_works_recent_5y": 5,
+        "textbook_or_manuals_10y": 1,
+        "supervised_defenses_university": 3,
+        "supervised_defenses_research": 5
+      }
+    },
+    {
+      "key": "professor_attestation_case",
+      "label": "Аттестационное дело профессора",
+      "layer": "academic_title",
+      "track": "professor",
+      "order": 160,
+      "description": "Формирование и представление аттестационного дела на присвоение учёного звания профессора.",
+      "requires": ["professor_position_and_load", "professor_experience", "professor_publications_training"],
+      "legal_basis": ["academic_title_rules_1746"],
+      "evidence_required": ["аттестационное дело", "решение ученого совета организации"],
+      "manual_verification": true
+    },
+    {
+      "key": "professor_title",
+      "label": "Учёное звание профессора",
+      "layer": "academic_title",
+      "track": "professor",
+      "order": 170,
+      "description": "Учёное звание профессора присваивается после выполнения условий по докторской степени, званию доцента, стажу, публикациям, учебным изданиям, подготовке кадров и аттестационной процедуре.",
+      "requires": ["professor_attestation_case"],
+      "legal_basis": ["academic_title_rules_1746"],
+      "evidence_required": ["аттестат профессора"],
+      "manual_verification": true
+    },
+    {
+      "key": "ras_professor",
+      "label": "Профессор РАН",
+      "layer": "academy_track",
+      "track": "ran",
+      "order": 180,
+      "description": "Почётное звание РАН, связанное с докторской степенью, работой в системе РАН, гражданством, выдвижением и конкурсной процедурой. Оно не равно учёному званию профессора Минобрнауки.",
+      "requires": ["doctor_degree"],
+      "legal_basis": ["ras_professor_2025"],
+      "evidence_required": ["диплом доктора наук", "российское гражданство", "подтверждение работы в системе РАН", "выдвижение", "конкурсная процедура", "подтверждение возраста"],
+      "metrics": {
+        "ras_research_experience_years": 10,
+        "age_limit_years": 50
+      },
+      "manual_verification": true
+    },
+    {
+      "key": "ras_corresponding_member",
+      "label": "Член-корреспондент РАН",
+      "layer": "academy_track",
+      "track": "ran",
+      "order": 190,
+      "description": "Выборный академический статус РАН, который в продуктовой схеме показывается после звания профессора РАН и требует отдельной конкурсной и экспертной проверки.",
+      "requires": ["ras_professor"],
+      "legal_basis": ["ras_membership_rules"],
+      "evidence_required": ["выдвижение", "выборная процедура РАН"],
+      "manual_verification": true
+    },
+    {
+      "key": "ras_academician",
+      "label": "Академик РАН",
+      "layer": "academy_track",
+      "track": "ran",
+      "order": 200,
+      "description": "Высшая академическая траектория, показывается как долгосрочная цель развития научной школы.",
+      "requires": ["ras_corresponding_member"],
+      "legal_basis": ["ras_membership_rules"],
+      "evidence_required": ["выдвижение", "выборная процедура РАН"],
+      "manual_verification": true
+    }
+  ]
+}

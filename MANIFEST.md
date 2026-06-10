@@ -1,0 +1,120 @@
+# MANIFEST
+
+Сборка содержит 106 файлов. Основные группы:
+
+- `src/app/*` — публичные страницы и API routes.
+- `src/lib/harvest/*` — сборщики и нормализация публикаций/СМИ.
+- `src/lib/llm/*` — LLM-провайдеры и промпт пресс-релиза.
+- `src/lib/career/*` — оценка карьерных milestone.
+- `data/seeds/*` — публичный seed состава СМУ, e-mail, фото-манифест; телефоны вынесены из публичного слоя.
+- `public/members/photos/*` — локальные SVG-аватары, которые команда `pnpm photos:fetch` заменяет на официальные фото профилей.
+- `data/rules/*` — карьерные правила и демо-ВАК-специальности.
+- `docs/*` — архитектура, контракты, задачи для Codex, deployment.
+
+## Полный список файлов
+
+- `.env.example`
+- `.env.local`
+- `.gitignore`
+- `AGENTS.md`
+- `README.md`
+- `data/examples/press-release-sample.docx`
+- `data/examples/press-release-sample.md`
+- `data/rules/career-rules.json`
+- `data/rules/vak-specialties.example.json`
+- `data/seeds/member-photo-manifest.json`
+- `data/seeds/members.private.local.template.csv`
+- `data/seeds/members.public.csv`
+- `data/seeds/members.public.json`
+- `docker-compose.yml`
+- `docs/ARCHITECTURE.md`
+- `docs/CAREER_RULES.md`
+- `docs/CODEX_TASKS.md`
+- `docs/DATA_CONTRACTS.md`
+- `docs/DEPLOYMENT.md`
+- `docs/PRESS_RELEASE_TEMPLATE.md`
+- `docs/SOURCE_MAP.md`
+- `next-env.d.ts`
+- `next.config.mjs`
+- `package.json`
+- `prisma/schema.prisma`
+- `public/members/photos/atanasova-anna-atanasovna.svg`
+- `public/members/photos/atlaskirov-albert-ruslanovich.svg`
+- `public/members/photos/basheva-olga-aleksandrovna.svg`
+- `public/members/photos/chirkova-anna-vladislavovna.svg`
+- `public/members/photos/chursina-anna-vadimovna.svg`
+- `public/members/photos/ermolaeva-yuliya-vyacheslavovna.svg`
+- `public/members/photos/feoktistova-olga-andreevna.svg`
+- `public/members/photos/galkin-konstantin-aleksandrovich.svg`
+- `public/members/photos/grigoreva-ekaterina-aleksandrovna.svg`
+- `public/members/photos/ivchenkova-mariya-sergeevna.svg`
+- `public/members/photos/kiselev-danil-aleksandrovich.svg`
+- `public/members/photos/lihanova-tamara-yurevna.svg`
+- `public/members/photos/moiseeva-evgeniya-mihaylovna.svg`
+- `public/members/photos/nesterov-roman-sergeevich.svg`
+- `public/members/photos/pavlov-nikita-mihaylovich.svg`
+- `public/members/photos/popova-ekaterina-sergeevna.svg`
+- `public/members/photos/rahmonov-abubakr-hasanovich.svg`
+- `public/members/photos/roslavtseva-mariya-vasilevna.svg`
+- `public/members/photos/sargsyan-artur-manvelovich.svg`
+- `public/members/photos/shvaya-andrey-yurevich.svg`
+- `public/members/photos/sitkovskiy-arseniy-mihaylovich.svg`
+- `public/members/photos/spirkina-anastasiya-konstantinovna.svg`
+- `public/members/photos/yudashkin-andrey-valentinovich.svg`
+- `scripts/audit-career.ts`
+- `scripts/fetch-member-photos.ts`
+- `scripts/seed-members.ts`
+- `scripts/sync-media.ts`
+- `scripts/sync-publications.ts`
+- `scripts/test-scopus.ts`
+- `src/app/admin/page.tsx`
+- `src/app/api/career/evaluate/route.ts`
+- `src/app/api/llm/generate-press-release/route.ts`
+- `src/app/api/profile/claim/route.ts`
+- `src/app/api/sync/media/route.ts`
+- `src/app/api/sync/publications/route.ts`
+- `src/app/career/page.tsx`
+- `src/app/events/page.tsx`
+- `src/app/globals.css`
+- `src/app/layout.tsx`
+- `src/app/media/page.tsx`
+- `src/app/members/page.tsx`
+- `src/app/news/page.tsx`
+- `src/app/page.tsx`
+- `src/app/publications/page.tsx`
+- `src/app/support/page.tsx`
+- `src/components/AdminActionCard.tsx`
+- `src/components/CareerMap.tsx`
+- `src/components/Footer.tsx`
+- `src/components/Header.tsx`
+- `src/components/KpiCard.tsx`
+- `src/components/MemberCard.tsx`
+- `src/components/PublicationTable.tsx`
+- `src/components/SectionCard.tsx`
+- `src/lib/brand.ts`
+- `src/lib/career/evaluate.ts`
+- `src/lib/career/rules.ts`
+- `src/lib/career/vak.ts`
+- `src/lib/data/publicMembers.ts`
+- `src/lib/db.ts`
+- `src/lib/demo/publications.ts`
+- `src/lib/documents/extractText.ts`
+- `src/lib/env.ts`
+- `src/lib/harvest/elibrary.ts`
+- `src/lib/harvest/fniscProfile.ts`
+- `src/lib/harvest/media.ts`
+- `src/lib/harvest/normalise.ts`
+- `src/lib/harvest/openalex.ts`
+- `src/lib/harvest/scientometrics.ts`
+- `src/lib/harvest/scopus.ts`
+- `src/lib/harvest/wos.ts`
+- `src/lib/llm/gemini.ts`
+- `src/lib/llm/index.ts`
+- `src/lib/llm/local.ts`
+- `src/lib/llm/openai.ts`
+- `src/lib/llm/prompts/pressRelease.ts`
+- `src/lib/llm/types.ts`
+- `src/lib/loadEnv.ts`
+- `src/lib/upload.ts`
+- `src/lib/utils.ts`
+- `tsconfig.json`

@@ -1,0 +1,286 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  PUBLIC
+  MEMBER
+  EDITOR
+  ADMIN
+}
+
+enum PublicationSource {
+  ELIBRARY
+  SCOPUS
+  WOS
+  OPENALEX
+  ORCID
+  CROSSREF
+  MANUAL
+}
+
+enum PublicationType {
+  ARTICLE
+  CONFERENCE
+  MONOGRAPH
+  EDUCATIONAL_EDITION
+  CHAPTER
+  REPORT
+  OTHER
+}
+
+enum MilestoneStatus {
+  LOCKED
+  READY
+  IN_PROGRESS
+  COMPLETED
+  NEEDS_VERIFICATION
+}
+
+enum NewsStatus {
+  DRAFT
+  NEEDS_REVIEW
+  PUBLISHED
+  ARCHIVED
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String?
+  role      Role     @default(MEMBER)
+  memberId  String?  @unique
+  member    Member?  @relation(fields: [memberId], references: [id])
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Member {
+  id                   String                  @id @default(cuid())
+  slug                 String                  @unique
+  fullName             String
+  fullNameEn           String?
+  institute            String?
+  unit                 String?
+  position             String?
+  degreeStatus         String?
+  email                String?
+  publicEmailsJson     String                  @default("[]")
+  academicDegree       String?
+  birthYear            Int?
+  interests            String?
+  rolesAndAchievements String?
+  publicComment        String?
+  fniscProfileUrl      String?
+  fniscProfileId       String?
+  photoUrl             String?
+  isActive             Boolean                 @default(true)
+  joinedSmuAt          DateTime?
+  createdAt            DateTime                @default(now())
+  updatedAt            DateTime                @updatedAt
+  identifiers          Identifier[]
+  publications         PublicationAuthor[]
+  metrics              ScientometricSnapshot[]
+  mediaMentions        MediaMention[]
+  teachingExperiences  TeachingExperience[]
+  careerOverrides      CareerOverride[]
+  user                 User?
+}
+
+model Identifier {
+  id        String   @id @default(cuid())
+  memberId  String
+  member    Member   @relation(fields: [memberId], references: [id], onDelete: Cascade)
+  system    String
+  value     String
+  url       String?
+  verified  Boolean  @default(false)
+  sourceUrl String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([memberId, system])
+  @@index([system, value])
+}
+
+model Publication {
+  id                 String              @id @default(cuid())
+  canonicalKey       String              @unique
+  title              String
+  titleEn            String?
+  year               Int?
+  type               PublicationType     @default(ARTICLE)
+  journal            String?
+  volume             String?
+  issue              String?
+  pages              String?
+  doi                String?
+  url                String?
+  elibraryItemId     String?
+  scopusEid          String?
+  wosUid             String?
+  rincCitations      Int?
+  scopusCitations    Int?
+  wosCitations       Int?
+  isVak              Boolean             @default(false)
+  vakSpecialtiesJson String              @default("[]")
+  sourcePayloadJson  String              @default("{}")
+  sourcesJson        String              @default("[]")
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+  authors            PublicationAuthor[]
+
+  @@index([year])
+  @@index([doi])
+  @@index([elibraryItemId])
+}
+
+model PublicationAuthor {
+  id            String      @id @default(cuid())
+  publicationId String
+  publication   Publication @relation(fields: [publicationId], references: [id], onDelete: Cascade)
+  memberId      String
+  member        Member      @relation(fields: [memberId], references: [id], onDelete: Cascade)
+  authorOrder   Int?
+  isConfirmed   Boolean     @default(false)
+
+  @@unique([publicationId, memberId])
+}
+
+model ScientometricSnapshot {
+  id           String   @id @default(cuid())
+  memberId     String
+  member       Member   @relation(fields: [memberId], references: [id], onDelete: Cascade)
+  source       String
+  publications Int?
+  citations    Int?
+  hIndex       Int?
+  rawJson      String   @default("{}")
+  capturedAt   DateTime @default(now())
+
+  @@index([memberId, source, capturedAt])
+}
+
+model MediaMention {
+  id          String    @id @default(cuid())
+  memberId    String?
+  member      Member?   @relation(fields: [memberId], references: [id], onDelete: SetNull)
+  title       String
+  description String?
+  url         String    @unique
+  domain      String?
+  sourceName  String?
+  publishedAt DateTime?
+  harvestedAt DateTime  @default(now())
+  confidence  Float     @default(0)
+  status      String    @default("published")
+  imageUrl    String?
+  query       String?
+}
+
+model Event {
+  id          String      @id @default(cuid())
+  title       String
+  startsAt    DateTime
+  endsAt      DateTime?
+  place       String?
+  url         String?
+  description String?
+  createdById String?
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  newsDrafts  NewsDraft[]
+}
+
+model NewsDraft {
+  id                 String              @id @default(cuid())
+  eventId            String?
+  event              Event?              @relation(fields: [eventId], references: [id], onDelete: SetNull)
+  title              String
+  slug               String              @unique
+  lead               String
+  bodyHtml           String
+  seoDescription     String?
+  status             NewsStatus          @default(DRAFT)
+  sourceDocumentName String?
+  sourceDocumentText String?
+  llmProvider        String?
+  llmModel           String?
+  factsToVerifyJson  String              @default("[]")
+  photoCaptionsJson  String              @default("[]")
+  createdById        String?
+  publishedAt        DateTime?
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+  assets             PressReleaseAsset[]
+}
+
+model PressReleaseAsset {
+  id          String    @id @default(cuid())
+  newsDraftId String
+  newsDraft   NewsDraft @relation(fields: [newsDraftId], references: [id], onDelete: Cascade)
+  kind        String
+  fileName    String
+  url         String
+  caption     String?
+  createdAt   DateTime  @default(now())
+}
+
+model TeachingExperience {
+  id          String    @id @default(cuid())
+  memberId    String
+  member      Member    @relation(fields: [memberId], references: [id], onDelete: Cascade)
+  institution String?
+  role        String?
+  startsAt    DateTime
+  endsAt      DateTime?
+  evidenceUrl String?
+  isVerified  Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model CareerOverride {
+  id           String          @id @default(cuid())
+  memberId     String
+  member       Member          @relation(fields: [memberId], references: [id], onDelete: Cascade)
+  milestoneKey String
+  status       MilestoneStatus
+  valueJson    String          @default("{}")
+  evidenceUrl  String?
+  comment      String?
+  verifiedById String?
+  createdAt    DateTime        @default(now())
+  updatedAt    DateTime        @updatedAt
+
+  @@unique([memberId, milestoneKey])
+}
+
+model SupportMeasure {
+  id          String    @id @default(cuid())
+  title       String
+  provider    String?
+  category    String?
+  targetGroup String?
+  deadline    DateTime?
+  url         String?
+  description String?
+  isActive    Boolean   @default(true)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  actorId   String?
+  action    String
+  entity    String?
+  entityId  String?
+  payload   String   @default("{}")
+  createdAt DateTime @default(now())
+}

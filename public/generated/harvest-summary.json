@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-06-09T18:45:26.033Z",
+  "run_id": "20260609T182512Z",
+  "totals": {
+    "members": 23,
+    "publications": 157,
+    "media_mentions": 65,
+    "warnings": 83
+  },
+  "providers": [
+    {
+      "source": "elibrary",
+      "status": "needs_cookie_or_api_access",
+      "recordsCollected": 0,
+      "warnings": 9,
+      "cacheUsed": false
+    },
+    {
+      "source": "scopus",
+      "status": "received",
+      "recordsCollected": 8,
+      "warnings": 0,
+      "cacheUsed": false
+    },
+    {
+      "source": "wos",
+      "status": "needs_api_key_or_manual_cache",
+      "recordsCollected": 0,
+      "warnings": 5,
+      "cacheUsed": false
+    },
+    {
+      "source": "openalex",
+      "status": "received",
+      "recordsCollected": 154,
+      "warnings": 0,
+      "cacheUsed": false
+    },
+    {
+      "source": "media",
+      "status": "received",
+      "recordsCollected": 65,
+      "warnings": 67,
+      "cacheUsed": false
+    },
+    {
+      "source": "photos",
+      "status": "partial",
+      "recordsCollected": 21,
+      "warnings": 2,
+      "cacheUsed": false
+    }
+  ]
+}

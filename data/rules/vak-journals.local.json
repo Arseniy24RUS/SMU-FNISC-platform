@@ -1,0 +1,7 @@
+{
+  "version": "local-placeholder",
+  "updated_at": "2026-06-08",
+  "status": "requires_official_import",
+  "note": "Локальный MVP не утверждает принадлежность журнала к перечню ВАК без официального импорта или ручной модерации.",
+  "journals": []
+}

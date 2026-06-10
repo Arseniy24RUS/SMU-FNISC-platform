@@ -1,0 +1,236 @@
+{
+  "autoPublishThreshold": 0.75,
+  "gdelt": {
+    "timespan": "3m",
+    "maxRecordsPerQuery": 75
+  },
+  "searchProviders": {
+    "profileMentionIndex": {
+      "enabled": true,
+      "maxLinksPerMember": 120
+    },
+    "sourceNoteUrls": {
+      "enabled": true,
+      "maxUrlsPerMember": 8
+    },
+    "bingWebRss": {
+      "enabled": true,
+      "maxQueriesPerMember": 6,
+      "maxItemsPerQuery": 10,
+      "allowedDomains": [
+        "fnisc.ru",
+        "isras.ru",
+        "idrras.ru",
+        "isdfnisc.ru",
+        "socinst.ru",
+        "demoscope.ru",
+        "deminform.ru",
+        "rosbalt.ru",
+        "sobaka.ru",
+        "t.me"
+      ]
+    }
+  },
+  "seedUrls": [
+    {
+      "memberSlug": "sitkovskiy-arseniy-mihaylovich",
+      "url": "https://www.demoscope.ru/weekly/2025/01081/gazeta03.php",
+      "title": "Газеты пишут об образовательной миграции",
+      "sourceType": "known_media_seed",
+      "forcePublish": true,
+      "date": "2025-06-24"
+    },
+    {
+      "memberSlug": "sitkovskiy-arseniy-mihaylovich",
+      "url": "https://t.me/tolk_tolk/27280",
+      "title": "Толкователь",
+      "sourceType": "telegram_seed",
+      "forcePublish": true,
+      "date": "2026-01-30T12:38:45+00:00"
+    },
+    {
+      "memberSlug": "sitkovskiy-arseniy-mihaylovich",
+      "url": "https://t.me/tolk_tolk/27274",
+      "title": "Толкователь",
+      "sourceType": "telegram_seed",
+      "forcePublish": true,
+      "date": "2026-01-29T12:50:01+00:00"
+    },
+    {
+      "memberSlug": "sitkovskiy-arseniy-mihaylovich",
+      "url": "https://www.rosbalt.ru/news/2026-01-31/obschestvo-superzrelosti-my-stremitelno-stareem-5543743",
+      "title": "Общество суперзрелости: мы стремительно стареем",
+      "sourceType": "known_media_seed",
+      "forcePublish": true,
+      "date": "2026-01-31"
+    },
+    {
+      "memberSlug": "sitkovskiy-arseniy-mihaylovich",
+      "url": "https://www.sobaka.ru/city/society/210740",
+      "title": "Очень скоро россиян моложе 35 лет останется лишь четверть населения — в 1990-м они составляли его половину. Что будет дальше?",
+      "sourceType": "known_media_seed",
+      "forcePublish": true,
+      "date": "2026-02-18T18:03:16+03:00"
+    },
+    {
+      "memberSlug": "sitkovskiy-arseniy-mihaylovich",
+      "url": "https://deminform.ru/analytics/vliyaniye-gosudarstvennoy-politiki-aglomerirovaniya-na-dolgosrochnye-tendentsii-izmeneniya-chislennosti-naseleniya-rossii",
+      "title": "Влияние государственной политики агломерирования на долгосрочные тенденции изменения численности населения России",
+      "sourceType": "known_media_seed",
+      "forcePublish": true,
+      "date": "2026-03-04"
+    },
+    {
+      "memberSlug": "sitkovskiy-arseniy-mihaylovich",
+      "url": "https://deminform.ru/analytics/urbanizatsiya-protiv-rozhdayemosti-strategiya-prostranstvennogo-razvitiya-rossii-do-2030-goda",
+      "title": "Урбанизация против рождаемости: стратегия пространственного развития России до 2030 года",
+      "sourceType": "known_media_seed",
+      "forcePublish": true,
+      "date": "2024-11-27"
+    },
+    {
+      "memberSlug": "sitkovskiy-arseniy-mihaylovich",
+      "url": "https://deminform.ru/analytics/semeynaya-ipoteka-2024-infrastrukturnoye-obespecheniye-mnogodetnoy-semyi",
+      "title": "Семейная ипотека 2024: инфраструктурное обеспечение многодетной семьи",
+      "sourceType": "known_media_seed",
+      "forcePublish": true,
+      "date": "2024-06-05"
+    },
+    {
+      "memberSlug": "sitkovskiy-arseniy-mihaylovich",
+      "url": "https://deminform.ru/analytics/demograficheskoye-chudo-izrailya-mozhem-povtorit",
+      "title": "Демографическое чудо Израиля: можем повторить?",
+      "sourceType": "known_media_seed",
+      "forcePublish": true,
+      "date": "2023-09-20"
+    },
+    {
+      "memberSlug": "ivchenkova-mariya-sergeevna",
+      "url": "https://www.isras.ru/institute_news.html?id=14367",
+      "title": "Упоминание Ивченковой М. С. на сайте Института социологии ФНИСЦ РАН",
+      "description": "Официальная новость Института социологии ФНИСЦ РАН, добавленная как seed URL для проверки media-harvest.",
+      "sourceType": "official_news_seed",
+      "sourceName": "Институт социологии ФНИСЦ РАН",
+      "forcePublish": true
+    }
+  ],
+  "sitemapSources": [
+    {
+      "name": "Деминформ",
+      "sitemapUrl": "https://deminform.ru/sitemap.xml",
+      "urlAllowRegex": "/analytics/|/interview/|/pryamaya-rech/",
+      "maxUrls": 8
+    },
+    {
+      "name": "Sobaka.ru",
+      "sitemapUrl": "https://www.sobaka.ru/sitemap.xml",
+      "urlAllowRegex": "/city/|/society/",
+      "maxUrls": 8
+    },
+    {
+      "name": "Rosbalt",
+      "sitemapUrl": "https://www.rosbalt.ru/sitemap.xml",
+      "urlAllowRegex": "/news/",
+      "maxUrls": 8
+    }
+  ],
+  "siteScanSources": [
+    {
+      "name": "ФНИСЦ РАН: новости на сайтах институтов",
+      "startUrls": [
+        "https://www.fnisc.ru/index.php?page_id=3127",
+        "https://www.fnisc.ru/index.php?page_id=3128",
+        "https://www.fnisc.ru/index.php?page_id=3129",
+        "https://www.fnisc.ru/index.php?page_id=3130",
+        "https://www.fnisc.ru/index.php?page_id=1339",
+        "https://www.fnisc.ru/index.php?page_id=2504"
+      ],
+      "urlAllowRegex": "news|novosti|smi|press|events|seminar|article|html|id=|page_id=",
+      "itemUrlRegex": "news|novosti|smi|press|events|seminar|article|html|id=",
+      "crawlUrlRegex": "idrras\\.ru/news|fnisc\\.ru/news|isras\\.ru/institute_news|socinst\\.ru/.+news|socinst\\.ru/.+novosti",
+      "pageContentUrlRegex": "idrras\\.ru/news|fnisc\\.ru/news|isras\\.ru/institute_news|socinst\\.ru/.+news|socinst\\.ru/.+novosti",
+      "maxPages": 80,
+      "maxDepth": 1,
+      "maxLinksPerPage": 1000,
+      "includeExternalLinks": true,
+      "fetchMatchedPages": false
+    },
+    {
+      "name": "ФНИСЦ РАН: публичная сфера и семинары",
+      "startUrls": [
+        "https://www.fnisc.ru/index.php?page_id=1256",
+        "https://www.fnisc.ru/index.php?page_id=2719",
+        "https://www.fnisc.ru/index.php?page_id=2533"
+      ],
+      "urlAllowRegex": "news|novosti|smi|press|events|seminar|article|html|id=|page_id=",
+      "itemUrlRegex": "news|novosti|smi|press|events|seminar|article|html|id=",
+      "crawlUrlRegex": "fnisc\\.ru/news|isras\\.ru/institute_news|idrras\\.ru/news|socinst\\.ru/.+news|socinst\\.ru/.+novosti",
+      "pageContentUrlRegex": "fnisc\\.ru/news|isras\\.ru/institute_news|idrras\\.ru/news|socinst\\.ru/.+news|socinst\\.ru/.+novosti",
+      "maxPages": 50,
+      "maxDepth": 1,
+      "maxLinksPerPage": 600,
+      "includeExternalLinks": true,
+      "fetchMatchedPages": false
+    },
+    {
+      "name": "СИ РАН: новости, конференции и публичная сфера",
+      "startUrls": [
+        "https://socinst.ru/news/",
+        "https://socinst.ru/events",
+        "https://socinst.ru/category/news/siran-conf/",
+        "https://socinst.ru/category/news/siran-seminars/",
+        "https://socinst.ru/category/news/siran-sotrudniki/",
+        "https://socinst.ru/category/news/siran-grants/",
+        "https://socinst.ru/category/news/siras-pub/",
+        "https://socinst.ru/category/news/merop-vnesh/"
+      ],
+      "urlAllowRegex": "socinst\\.ru/(?:news/?$|events/?$|category/news|conferences/|\\d{4,6}/|articles/article-|project/)",
+      "itemUrlRegex": "socinst\\.ru/(?:conferences/[^?#]+/?|\\d{4,6}/|articles/article-[^?#]+/?|project/[^?#]+/?)",
+      "crawlUrlRegex": "socinst\\.ru/(?:news/?$|events/?$|category/news|conferences/[^?#]+/?|\\d{4,6}/|articles/article-|project/)",
+      "pageContentUrlRegex": "socinst\\.ru/(?:conferences/[^?#]+/?|\\d{4,6}/|articles/article-[^?#]+/?|project/[^?#]+/?)",
+      "maxPages": 160,
+      "maxDepth": 1,
+      "maxLinksPerPage": 1200,
+      "includeExternalLinks": false,
+      "fetchMatchedPages": false
+    },
+    {
+      "name": "ИСПИ ФНИСЦ РАН: новости и события",
+      "startUrls": [
+        "https://xn--h1aauh.xn--p1ai/",
+        "https://xn--h1aauh.xn--p1ai/category/novosti/",
+        "https://xn--h1aauh.xn--p1ai/category/sobytiya/"
+      ],
+      "urlAllowRegex": "xn--h1aauh\\.xn--p1ai/(?:category/(?:novosti|sobytiya)|\\d{4,6}-?\\d*/|\\d{4}/\\d{2}/)",
+      "itemUrlRegex": "xn--h1aauh\\.xn--p1ai/(?:\\d{4,6}-?\\d*/|\\d{4}/\\d{2}/[^?#]+/?)",
+      "crawlUrlRegex": "xn--h1aauh\\.xn--p1ai/(?:category/(?:novosti|sobytiya)|\\d{4,6}-?\\d*/|\\d{4}/\\d{2}/)",
+      "pageContentUrlRegex": "xn--h1aauh\\.xn--p1ai/(?:\\d{4,6}-?\\d*/|\\d{4}/\\d{2}/[^?#]+/?)",
+      "maxPages": 80,
+      "maxDepth": 1,
+      "maxLinksPerPage": 800,
+      "includeExternalLinks": false,
+      "fetchMatchedPages": false
+    },
+    {
+      "name": "ИСиР ЮФУ: анонсы и события",
+      "startUrls": [
+        "https://www.isir.sfedu.ru/index.php?Itemid=121&id=9&option=com_content&view=category"
+      ],
+      "urlAllowRegex": "isir\\.sfedu\\.ru/index\\.php\\?.*(?:option=com_content|view=article|id=\\d+)",
+      "itemUrlRegex": "isir\\.sfedu\\.ru/index\\.php\\?.*view=article.*id=\\d+",
+      "crawlUrlRegex": "isir\\.sfedu\\.ru/index\\.php\\?.*(?:view=article.*id=\\d+|view=category)",
+      "pageContentUrlRegex": "isir\\.sfedu\\.ru/index\\.php\\?.*view=article.*id=\\d+",
+      "maxPages": 60,
+      "maxDepth": 1,
+      "maxLinksPerPage": 1000,
+      "includeExternalLinks": false,
+      "fetchMatchedPages": false
+    }
+  ],
+  "telegramChannels": [
+    {
+      "channel": "tolk_tolk",
+      "maxLatestPosts": 50
+    }
+  ]
+}

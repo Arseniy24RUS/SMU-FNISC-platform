@@ -1,0 +1,1277 @@
+{
+  "generated_at": "2026-06-08T23:02:29.707Z",
+  "records": [
+    {
+      "slug": "atanasova-anna-atanasovna",
+      "full_name": "Атанасова Анна Атанасовна",
+      "profile_url": "https://www.isras.ru/pers_about.html?id=1942",
+      "status": "downloaded",
+      "photo_url": "/members/photos/atanasova-anna-atanasovna.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/E8983569_EA3D_7ECB_A0DA_DB36B65E23D8_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/E8983569_EA3D_7ECB_A0DA_DB36B65E23D8_b.jpg",
+          "score": 144,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/assets/images/printer1.png",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/assets/images/logo_fnisc.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/icon_menu/about3_is.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/publ.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/soc_top/lupa2.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/soc_top/map22.jpg",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/assets/images/cln32.jpg",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        }
+      ]
+    },
+    {
+      "slug": "atlaskirov-albert-ruslanovich",
+      "full_name": "Атласкиров Альберт Русланович",
+      "profile_url": "https://www.fnisc.ru/pers_about.html?id=2237",
+      "status": "downloaded",
+      "photo_url": "/members/photos/atlaskirov-albert-ruslanovich.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/FE997A7D_127E_7E69_A04A_1E221DA0D386_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/E6FF0033_A50C_D593_5FE5_DAE8E32007C4_b.jpg",
+          "score": 132,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/E8983569_EA3D_7ECB_A0DA_DB36B65E23D8_b.jpg",
+          "score": 132,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/FE997A7D_127E_7E69_A04A_1E221DA0D386_b.jpg",
+          "score": 132,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/D3365A50_CA20_E252_DA56_D7D6EFD2941D_b.jpg",
+          "score": 132,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/F364077D_EB6E_2EA0_2C0D_878910FA5ED3_b.jpg",
+          "score": 132,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/none.jpg",
+          "score": 56,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/E6D75147_0BD3_7739_A249_748E5181AC3E_b.jpg",
+          "score": 56,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/3005B758_2A76_4EE9_F53A_A587C118234F_b.jpg",
+          "score": 56,
+          "source": "img:src"
+        }
+      ],
+      "fnisc_profile_id": "2237",
+      "fnisc_profile_url": "https://www.fnisc.ru/pers_about.html?id=2237",
+      "photo_source_profile_url": "https://www.fnisc.ru/pers_about.html?id=2237",
+      "photo_source_url": "https://www.isras.ru/dreamedit/foto/FE997A7D_127E_7E69_A04A_1E221DA0D386_b.jpg"
+    },
+    {
+      "slug": "basheva-olga-aleksandrovna",
+      "full_name": "Башева Ольга Александровна",
+      "profile_url": "https://www.isras.ru/pers_about.html?id=489",
+      "status": "downloaded",
+      "photo_url": "/members/photos/basheva-olga-aleksandrovna.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/97FE085A_EED7_13E9_9A4B_3BDEC9FF76B3_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/97FE085A_EED7_13E9_9A4B_3BDEC9FF76B3_b.jpg",
+          "score": 144,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/assets/images/printer1.png",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/assets/images/logo_fnisc.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/icon_menu/about3_is.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/adobe_logo.png",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/publ.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/soc_top/lupa2.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/soc_top/map22.jpg",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        }
+      ]
+    },
+    {
+      "slug": "galkin-konstantin-aleksandrovich",
+      "full_name": "Галкин Константин Александрович",
+      "profile_url": "https://www.fnisc.ru/pers_about.html?id=2222",
+      "status": "downloaded",
+      "photo_url": "/members/photos/galkin-konstantin-aleksandrovich.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/8E56F903_EAD2_E3DB_3368_6F0EEC0BC0F7_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/8E56F903_EAD2_E3DB_3368_6F0EEC0BC0F7_b.jpg",
+          "score": 144,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.fnisc.ru/img/printer.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/elibrary_logos2.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/Icon/book_logo.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/assets/images/logo_2024.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/pdf.gif",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://counter.yadro.ru/hit?t44.6;r%22+escape(document.referrer)+((typeof(screen)==%22undefined%22)?%22%22:%22;s%22+screen.width+%22*%22+screen.height+%22*%22+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+%22;u%22+escape(document.URL)+%22;%22+Math.random()+",
+          "score": -4,
+          "source": "img:src",
+          "rejected": "too small"
+        },
+        {
+          "url": "https://mc.yandex.ru/watch/48777026",
+          "score": -8,
+          "source": "img:src"
+        }
+      ]
+    },
+    {
+      "slug": "grigoreva-ekaterina-aleksandrovna",
+      "full_name": "Григорьева Екатерина Александровна",
+      "profile_url": "https://www.isras.ru/pers_about.html?id=2319",
+      "status": "downloaded",
+      "photo_url": "/members/photos/grigoreva-ekaterina-aleksandrovna.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/383993E4_FBA3_6E04_D984_F820CD8FA2A8_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/383993E4_FBA3_6E04_D984_F820CD8FA2A8_b.jpg",
+          "score": 144,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/assets/images/printer1.png",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/assets/images/logo_fnisc.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/icon_menu/about3_is.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/adobe_logo.png",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/publ.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/soc_top/lupa2.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/soc_top/map22.jpg",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        }
+      ]
+    },
+    {
+      "slug": "ermolaeva-yuliya-vyacheslavovna",
+      "full_name": "Ермолаева Юлия Вячеславовна",
+      "profile_url": "https://www.fnisc.ru/pers_about.html?id=517",
+      "status": "downloaded",
+      "photo_url": "/members/photos/ermolaeva-yuliya-vyacheslavovna.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/41BA11DF_3A0D_68E2_0C39_B8A1B4EFD767_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/41BA11DF_3A0D_68E2_0C39_B8A1B4EFD767_b.jpg",
+          "score": 144,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.fnisc.ru/img/printer.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/elibrary_logos2.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/pdf.gif",
+          "score": 14,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/assets/images/logo_2024.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/Icon/book_logo.jpg",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://counter.yadro.ru/hit?t44.6;r%22+escape(document.referrer)+((typeof(screen)==%22undefined%22)?%22%22:%22;s%22+screen.width+%22*%22+screen.height+%22*%22+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+%22;u%22+escape(document.URL)+%22;%22+Math.random()+",
+          "score": -4,
+          "source": "img:src",
+          "rejected": "too small"
+        },
+        {
+          "url": "https://mc.yandex.ru/watch/48777026",
+          "score": -8,
+          "source": "img:src"
+        }
+      ]
+    },
+    {
+      "slug": "ivchenkova-mariya-sergeevna",
+      "full_name": "Ивченкова Мария Сергеевна",
+      "profile_url": "https://www.fnisc.ru/pers_about.html?id=581",
+      "status": "downloaded",
+      "photo_url": "/members/photos/ivchenkova-mariya-sergeevna.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/97272C2A_9284_71D1_C071_C58CA570516B_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/97272C2A_9284_71D1_C071_C58CA570516B_b.jpg",
+          "score": 144,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.fnisc.ru/img/printer.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/elibrary_logos2.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/pdf.gif",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/Icon/book_logo.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/assets/images/logo_2024.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://counter.yadro.ru/hit?t44.6;r%22+escape(document.referrer)+((typeof(screen)==%22undefined%22)?%22%22:%22;s%22+screen.width+%22*%22+screen.height+%22*%22+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+%22;u%22+escape(document.URL)+%22;%22+Math.random()+",
+          "score": -4,
+          "source": "img:src",
+          "rejected": "too small"
+        },
+        {
+          "url": "https://mc.yandex.ru/watch/48777026",
+          "score": -8,
+          "source": "img:src"
+        }
+      ]
+    },
+    {
+      "slug": "kiselev-danil-aleksandrovich",
+      "full_name": "Киселев Данил Александрович",
+      "profile_url": "https://www.fnisc.ru/pers_about.html?id=2606",
+      "status": "downloaded",
+      "photo_url": "/members/photos/kiselev-danil-aleksandrovich.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/CA55BDED_8B5E_4669_A858_2828FD6D1A62_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/CA55BDED_8B5E_4669_A858_2828FD6D1A62_b.jpg",
+          "score": 144,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.fnisc.ru/img/printer.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/elibrary_logos2.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/Icon/book_logo.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/assets/images/logo_2024.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://counter.yadro.ru/hit?t44.6;r%22+escape(document.referrer)+((typeof(screen)==%22undefined%22)?%22%22:%22;s%22+screen.width+%22*%22+screen.height+%22*%22+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+%22;u%22+escape(document.URL)+%22;%22+Math.random()+",
+          "score": -4,
+          "source": "img:src",
+          "rejected": "too small"
+        },
+        {
+          "url": "https://mc.yandex.ru/watch/48777026",
+          "score": -8,
+          "source": "img:src"
+        }
+      ]
+    },
+    {
+      "slug": "lihanova-tamara-yurevna",
+      "full_name": "Лиханова Тамара Юрьевна",
+      "profile_url": "https://www.fnisc.ru/pers_about.html?id=2539",
+      "status": "downloaded",
+      "photo_url": "/members/photos/lihanova-tamara-yurevna.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/7AA10883_172C_6E7E_ECA1_A1EFEB01D5C7_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/7AA10883_172C_6E7E_ECA1_A1EFEB01D5C7_b.jpg",
+          "score": 144,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.fnisc.ru/img/printer.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/elibrary_logos2.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/pdf.gif",
+          "score": 14,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/Icon/book_logo.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/assets/images/logo_2024.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://counter.yadro.ru/hit?t44.6;r%22+escape(document.referrer)+((typeof(screen)==%22undefined%22)?%22%22:%22;s%22+screen.width+%22*%22+screen.height+%22*%22+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+%22;u%22+escape(document.URL)+%22;%22+Math.random()+",
+          "score": -4,
+          "source": "img:src",
+          "rejected": "too small"
+        },
+        {
+          "url": "https://mc.yandex.ru/watch/48777026",
+          "score": -8,
+          "source": "img:src"
+        }
+      ]
+    },
+    {
+      "slug": "moiseeva-evgeniya-mihaylovna",
+      "full_name": "Моисеева Евгения Михайловна",
+      "profile_url": "https://www.fnisc.ru/pers_about.html?id=2025",
+      "status": "downloaded",
+      "photo_url": "/members/photos/moiseeva-evgeniya-mihaylovna.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/859E0533_E8BF_4A94_2296_EDC85240E80B_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/859E0533_E8BF_4A94_2296_EDC85240E80B_b.jpg",
+          "score": 144,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.fnisc.ru/img/printer.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/elibrary_logos2.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/Icon/book_logo.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/assets/images/logo_2024.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/pdf.gif",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://counter.yadro.ru/hit?t44.6;r%22+escape(document.referrer)+((typeof(screen)==%22undefined%22)?%22%22:%22;s%22+screen.width+%22*%22+screen.height+%22*%22+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+%22;u%22+escape(document.URL)+%22;%22+Math.random()+",
+          "score": -4,
+          "source": "img:src",
+          "rejected": "too small"
+        },
+        {
+          "url": "https://mc.yandex.ru/watch/48777026",
+          "score": -8,
+          "source": "img:src"
+        }
+      ]
+    },
+    {
+      "slug": "nesterov-roman-sergeevich",
+      "full_name": "Нестеров Роман Сергеевич",
+      "profile_url": "https://www.fnisc.ru/pers_about.html?id=2748",
+      "status": "downloaded",
+      "photo_url": "/members/photos/nesterov-roman-sergeevich.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/54294BEA_6E22_7959_2F04_9FDFF2C5AEAF_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/54294BEA_6E22_7959_2F04_9FDFF2C5AEAF_b.jpg",
+          "score": 144,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.fnisc.ru/img/printer.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/elibrary_logos2.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/Icon/book_logo.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/assets/images/logo_2024.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/pdf.gif",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://counter.yadro.ru/hit?t44.6;r%22+escape(document.referrer)+((typeof(screen)==%22undefined%22)?%22%22:%22;s%22+screen.width+%22*%22+screen.height+%22*%22+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+%22;u%22+escape(document.URL)+%22;%22+Math.random()+",
+          "score": -4,
+          "source": "img:src",
+          "rejected": "too small"
+        },
+        {
+          "url": "https://mc.yandex.ru/watch/48777026",
+          "score": -8,
+          "source": "img:src"
+        }
+      ]
+    },
+    {
+      "slug": "pavlov-nikita-mihaylovich",
+      "full_name": "Павлов Никита Михайлович",
+      "profile_url": "https://www.fnisc.ru/pers_about.html?id=2822",
+      "status": "downloaded",
+      "photo_url": "/members/photos/pavlov-nikita-mihaylovich.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/5FF74AE5_4E1C_7427_99C6_6B5C49CC0A61_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/4468314D_2E07_47BE_7CF2_7CD700DDACE3_b.jpg",
+          "score": 132,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/5FF74AE5_4E1C_7427_99C6_6B5C49CC0A61_b.jpg",
+          "score": 132,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/F8E7752F_F4F5_798A_AF20_EFB5A3751A43_b.jpg",
+          "score": 132,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/2B3D3B45_8210_871A_2F34_A3A33DD34222_b.jpg",
+          "score": 132,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/none.jpg",
+          "score": 64,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/10D1824B_B9D7_7FCD_2180_9E75444514F7_b.jpg",
+          "score": 64,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/103big.jpg",
+          "score": 56,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/BDCF8AC9_1195_C92A_F96A_6CCD7DB2E690_b.jpg",
+          "score": 56,
+          "source": "img:src"
+        }
+      ],
+      "fnisc_profile_id": "2822",
+      "fnisc_profile_url": "https://www.fnisc.ru/pers_about.html?id=2822",
+      "photo_source_profile_url": "https://www.fnisc.ru/pers_about.html?id=2822",
+      "photo_source_url": "https://www.isras.ru/dreamedit/foto/5FF74AE5_4E1C_7427_99C6_6B5C49CC0A61_b.jpg"
+    },
+    {
+      "slug": "popova-ekaterina-sergeevna",
+      "full_name": "Попова Екатерина Сергеевна",
+      "profile_url": "https://www.fnisc.ru/pers_about.html?id=493",
+      "status": "downloaded",
+      "photo_url": "/members/photos/popova-ekaterina-sergeevna.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/08015ACD_4779_38F4_EE0A_65E7E65ACAC8_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/08015ACD_4779_38F4_EE0A_65E7E65ACAC8_b.jpg",
+          "score": 144,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.fnisc.ru/img/printer.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/elibrary_logos2.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/Icon/book_logo.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/assets/images/logo_2024.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/pdf.gif",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://counter.yadro.ru/hit?t44.6;r%22+escape(document.referrer)+((typeof(screen)==%22undefined%22)?%22%22:%22;s%22+screen.width+%22*%22+screen.height+%22*%22+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+%22;u%22+escape(document.URL)+%22;%22+Math.random()+",
+          "score": -4,
+          "source": "img:src",
+          "rejected": "too small"
+        },
+        {
+          "url": "https://mc.yandex.ru/watch/48777026",
+          "score": -8,
+          "source": "img:src"
+        }
+      ]
+    },
+    {
+      "slug": "rahmonov-abubakr-hasanovich",
+      "full_name": "Рахмонов Абубакр Хасанович",
+      "profile_url": "https://www.fnisc.ru/pers_about.html?id=2246",
+      "status": "downloaded",
+      "photo_url": "/members/photos/rahmonov-abubakr-hasanovich.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/AA80112A_A76A_C855_2C86_942265B9598B_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/AA80112A_A76A_C855_2C86_942265B9598B_b.jpg",
+          "score": 144,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.fnisc.ru/img/printer.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/elibrary_logos2.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/Icon/book_logo.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/assets/images/logo_2024.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/pdf.gif",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://counter.yadro.ru/hit?t44.6;r%22+escape(document.referrer)+((typeof(screen)==%22undefined%22)?%22%22:%22;s%22+screen.width+%22*%22+screen.height+%22*%22+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+%22;u%22+escape(document.URL)+%22;%22+Math.random()+",
+          "score": -4,
+          "source": "img:src",
+          "rejected": "too small"
+        },
+        {
+          "url": "https://mc.yandex.ru/watch/48777026",
+          "score": -8,
+          "source": "img:src"
+        }
+      ]
+    },
+    {
+      "slug": "roslavtseva-mariya-vasilevna",
+      "full_name": "Рославцева Мария Васильевна",
+      "profile_url": "https://www.fnisc.ru/pers_about.html?id=2419",
+      "status": "downloaded",
+      "photo_url": "/members/photos/roslavtseva-mariya-vasilevna.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/289909E3_8B24_8B54_ECC4_D05116D890C0_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/289909E3_8B24_8B54_ECC4_D05116D890C0_b.jpg",
+          "score": 144,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.fnisc.ru/img/printer.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/elibrary_logos2.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/pdf.gif",
+          "score": 14,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/Icon/book_logo.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/assets/images/logo_2024.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://counter.yadro.ru/hit?t44.6;r%22+escape(document.referrer)+((typeof(screen)==%22undefined%22)?%22%22:%22;s%22+screen.width+%22*%22+screen.height+%22*%22+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+%22;u%22+escape(document.URL)+%22;%22+Math.random()+",
+          "score": -4,
+          "source": "img:src",
+          "rejected": "too small"
+        },
+        {
+          "url": "https://mc.yandex.ru/watch/48777026",
+          "score": -8,
+          "source": "img:src"
+        }
+      ]
+    },
+    {
+      "slug": "sargsyan-artur-manvelovich",
+      "full_name": "Саргсян Артур Манвелович",
+      "profile_url": "https://www.fnisc.ru/pers_about.html?id=2620",
+      "status": "not_found",
+      "candidates": [
+        {
+          "url": "https://www.fnisc.ru/dreamedit/foto/none.jpg",
+          "score": 84,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/img/printer.jpg",
+          "score": 46,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/elibrary_logos2.jpg",
+          "score": 46,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/pdf.gif",
+          "score": 14,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/Icon/book_logo.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/assets/images/logo_2024.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://counter.yadro.ru/hit?t44.6;r%22+escape(document.referrer)+((typeof(screen)==%22undefined%22)?%22%22:%22;s%22+screen.width+%22*%22+screen.height+%22*%22+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+%22;u%22+escape(document.URL)+%22;%22+Math.random()+",
+          "score": -4,
+          "source": "img:src",
+          "rejected": "too small"
+        },
+        {
+          "url": "https://mc.yandex.ru/watch/48777026",
+          "score": -8,
+          "source": "img:src"
+        }
+      ],
+      "error": "No suitable portrait among 8 candidates"
+    },
+    {
+      "slug": "sitkovskiy-arseniy-mihaylovich",
+      "full_name": "Ситковский Арсений Михайлович",
+      "profile_url": "https://www.fnisc.ru/pers_about.html?id=2472",
+      "status": "downloaded",
+      "photo_url": "/members/photos/sitkovskiy-arseniy-mihaylovich.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/484E915A_0F6F_E4C4_2550_16EE11FF3473_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/484E915A_0F6F_E4C4_2550_16EE11FF3473_b.jpg",
+          "score": 144,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.fnisc.ru/img/printer.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/elibrary_logos2.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/Icon/book_logo.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/assets/images/logo_2024.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/pdf.gif",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://counter.yadro.ru/hit?t44.6;r%22+escape(document.referrer)+((typeof(screen)==%22undefined%22)?%22%22:%22;s%22+screen.width+%22*%22+screen.height+%22*%22+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+%22;u%22+escape(document.URL)+%22;%22+Math.random()+",
+          "score": -4,
+          "source": "img:src",
+          "rejected": "too small"
+        },
+        {
+          "url": "https://mc.yandex.ru/watch/48777026",
+          "score": -8,
+          "source": "img:src"
+        }
+      ]
+    },
+    {
+      "slug": "spirkina-anastasiya-konstantinovna",
+      "full_name": "Спиркина Анастасия Константиновна",
+      "profile_url": "https://www.fnisc.ru/pers_about.html?id=2565",
+      "status": "downloaded",
+      "photo_url": "/members/photos/spirkina-anastasiya-konstantinovna.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/C90FEB97_8F78_809F_66E5_B1814196E7A8_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/C90FEB97_8F78_809F_66E5_B1814196E7A8_b.jpg",
+          "score": 144,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.fnisc.ru/img/printer.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/elibrary_logos2.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/pdf.gif",
+          "score": 14,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/Icon/book_logo.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/assets/images/logo_2024.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://counter.yadro.ru/hit?t44.6;r%22+escape(document.referrer)+((typeof(screen)==%22undefined%22)?%22%22:%22;s%22+screen.width+%22*%22+screen.height+%22*%22+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+%22;u%22+escape(document.URL)+%22;%22+Math.random()+",
+          "score": -4,
+          "source": "img:src",
+          "rejected": "too small"
+        },
+        {
+          "url": "https://mc.yandex.ru/watch/48777026",
+          "score": -8,
+          "source": "img:src"
+        }
+      ]
+    },
+    {
+      "slug": "feoktistova-olga-andreevna",
+      "full_name": "Феоктистова Ольга Андреевна",
+      "profile_url": "https://www.isras.ru/pers_about.html?id=2686",
+      "status": "downloaded",
+      "photo_url": "/members/photos/feoktistova-olga-andreevna.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/EA9BC98E_87CA_4A8A_B10D_98994773AF56_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/EA9BC98E_87CA_4A8A_B10D_98994773AF56_b.jpg",
+          "score": 144,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/assets/images/printer1.png",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/assets/images/logo_fnisc.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/icon_menu/about3_is.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/soc_top/lupa2.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/soc_top/map22.jpg",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/assets/images/cln32.jpg",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/soc_top/global22.jpg",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        }
+      ]
+    },
+    {
+      "slug": "chirkova-anna-vladislavovna",
+      "full_name": "Чиркова Анна Владиславовна",
+      "profile_url": "https://www.isras.ru/pers_about.html?id=1893",
+      "status": "downloaded",
+      "photo_url": "/members/photos/chirkova-anna-vladislavovna.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/E4209BC7_C33C_56DB_EEB6_E590760F434E_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/150big.jpg",
+          "score": 132,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/963001CC_835C_34BC_628E_CBD795F5A286_b.jpg",
+          "score": 132,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/E4209BC7_C33C_56DB_EEB6_E590760F434E_b.jpg",
+          "score": 132,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/none.jpg",
+          "score": 56,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/154big.jpg",
+          "score": 56,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/E082748A_CFDF_133A_8E86_8AAA9AA5AACC_b.jpg",
+          "score": 56,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/3776F5D2_AB75_9095_C2AA_0DA000564CE0_b.jpg",
+          "score": 56,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/D3365A50_CA20_E252_DA56_D7D6EFD2941D_b.jpg",
+          "score": 48,
+          "source": "img:src"
+        }
+      ],
+      "fnisc_profile_id": "1893",
+      "fnisc_profile_url": "https://www.isras.ru/pers_about.html?id=1893",
+      "photo_source_profile_url": "https://www.isras.ru/pers_about.html?id=1893",
+      "photo_source_url": "https://www.isras.ru/dreamedit/foto/E4209BC7_C33C_56DB_EEB6_E590760F434E_b.jpg"
+    },
+    {
+      "slug": "chursina-anna-vadimovna",
+      "full_name": "Чурсина Анна Вадимовна",
+      "profile_url": "https://www.fnisc.ru/pers_about.html?id=1513",
+      "status": "downloaded",
+      "photo_url": "/members/photos/chursina-anna-vadimovna.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/E44CF874_01E2_C9CE_27CA_3CF4C91F71FA_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/E44CF874_01E2_C9CE_27CA_3CF4C91F71FA_b.jpg",
+          "score": 144,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.fnisc.ru/img/printer.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/elibrary_logos2.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/pdf.gif",
+          "score": 22,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/files/Image/Icon/book_logo.jpg",
+          "score": 16,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/assets/images/logo_2024.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://counter.yadro.ru/hit?t44.6;r%22+escape(document.referrer)+((typeof(screen)==%22undefined%22)?%22%22:%22;s%22+screen.width+%22*%22+screen.height+%22*%22+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+%22;u%22+escape(document.URL)+%22;%22+Math.random()+",
+          "score": -4,
+          "source": "img:src",
+          "rejected": "too small"
+        },
+        {
+          "url": "https://mc.yandex.ru/watch/48777026",
+          "score": -8,
+          "source": "img:src"
+        }
+      ]
+    },
+    {
+      "slug": "shvaya-andrey-yurevich",
+      "full_name": "Швая Андрей Юрьевич",
+      "profile_url": "https://socinst.ru/staff/shvaya-andrej-urevich/",
+      "status": "not_found",
+      "candidates": [
+        {
+          "url": "https://www.jourssa.ru/public/journals/1/cover_issue_185_ru_RU.jpg",
+          "score": 20,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://piter-sociology.ru/public/journals/2/cover_issue_52_ru_RU.jpg",
+          "score": 12,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.powerelites.ru/public/journals/1/cover_issue_25_ru_RU.png",
+          "score": 12,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://i.ytimg.com/vi/ID/hqdefault.jpg",
+          "score": 8,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://socinst.ru/wp-content/uploads/minlogo2.png",
+          "score": 4,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://socinst.ru/wp-content/themes/owntheme/img/logo.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://socinst.ru/wp-content/uploads/2018/08/Ras-logo.svg_-1-e1534875086314.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://socinst.ru/wp-content/uploads/2018/08/fnisclogo2-2.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        }
+      ],
+      "error": "No suitable portrait among 11 candidates"
+    },
+    {
+      "slug": "yudashkin-andrey-valentinovich",
+      "full_name": "Юдашкин Андрей Валентинович",
+      "profile_url": "https://www.fnisc.ru/pers_about.html?id=1605",
+      "status": "downloaded",
+      "photo_url": "/members/photos/yudashkin-andrey-valentinovich.jpg",
+      "source_url": "https://www.isras.ru/dreamedit/foto/E636CB19_C06B_358C_B1EF_06F7C3FD9FB6_b.jpg",
+      "candidates": [
+        {
+          "url": "https://www.isras.ru/dreamedit/foto/E636CB19_C06B_358C_B1EF_06F7C3FD9FB6_b.jpg",
+          "score": 144,
+          "source": "img:src"
+        },
+        {
+          "url": "https://www.fnisc.ru/img/printer.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.isras.ru/files/Image/elibrary_logos2.jpg",
+          "score": 106,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://www.fnisc.ru/assets/images/logo_2024.png",
+          "score": 0,
+          "source": "img:src",
+          "rejected": "non-portrait asset"
+        },
+        {
+          "url": "https://counter.yadro.ru/hit?t44.6;r%22+escape(document.referrer)+((typeof(screen)==%22undefined%22)?%22%22:%22;s%22+screen.width+%22*%22+screen.height+%22*%22+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+%22;u%22+escape(document.URL)+%22;%22+Math.random()+",
+          "score": -4,
+          "source": "img:src",
+          "rejected": "too small"
+        },
+        {
+          "url": "https://mc.yandex.ru/watch/48777026",
+          "score": -8,
+          "source": "img:src"
+        }
+      ]
+    }
+  ]
+}

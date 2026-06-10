@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-06-09T18:45:26.030Z",
+  "total_publications": 157,
+  "publications_by_year": {
+    "2010": 2,
+    "2012": 3,
+    "2013": 2,
+    "2016": 3,
+    "2017": 5,
+    "2018": 7,
+    "2019": 9,
+    "2020": 24,
+    "2021": 18,
+    "2022": 12,
+    "2023": 18,
+    "2024": 23,
+    "2025": 27,
+    "2026": 4
+  },
+  "publications_by_source": {
+    "openalex": 153,
+    "scopus": 8
+  },
+  "rinc_total": 0,
+  "scopus_total": 8,
+  "wos_total": 0,
+  "citations_rinc": 0,
+  "citations_scopus": 6,
+  "citations_wos": 0,
+  "h_index_rinc": 0,
+  "h_index_scopus": 2,
+  "h_index_wos": 0,
+  "vak_publications_estimated": 0,
+  "publications_last_5_years": 84
+}
