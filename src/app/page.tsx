@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { KpiCard } from '@/components/KpiCard';
+import { PresenceMapViewer } from '@/components/PresenceMapViewer';
 import { publicAssetPath } from '@/lib/deploy';
 
 const missionCards = [
@@ -174,22 +175,7 @@ export default function HomePage() {
           </p>
         </div>
         <div className="presence-layout">
-          <figure className="presence-map-card presence-map-card--zoomed">
-            <div className="presence-map-zoom">
-              <Image
-                className="presence-map"
-                src={publicAssetPath('/maps/fnisc-presence-map.svg')}
-                alt="Карта субъектов Российской Федерации с отмеченными городами присутствия ФНИСЦ РАН"
-                width={1200}
-                height={620}
-                sizes="(max-width: 900px) 100vw, 68vw"
-                unoptimized
-              />
-            </div>
-            <figcaption>
-              Карта сфокусирована на европейской части России, где расположены все отмеченные подразделения ФНИСЦ РАН.
-            </figcaption>
-          </figure>
+          <PresenceMapViewer />
           <aside className="presence-note" aria-label="Расшифровка карты">
             <h3>Узлы присутствия</h3>
             <div className="presence-list">
@@ -254,17 +240,6 @@ export default function HomePage() {
       </section>
 
       <style>{`
-        .presence-map-card--zoomed {
-          overflow: hidden;
-        }
-        .presence-map-zoom {
-          overflow: hidden;
-          background: #f7f9fc;
-        }
-        .presence-map-card--zoomed .presence-map {
-          transform: scale(1.72);
-          transform-origin: 23% 56%;
-        }
         .structure-card--list {
           padding: clamp(18px, 3vw, 28px);
         }
