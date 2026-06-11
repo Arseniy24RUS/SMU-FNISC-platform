@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { KpiCard } from '@/components/KpiCard';
-import { PresenceMapViewer } from '@/components/PresenceMapViewer';
 import { publicAssetPath } from '@/lib/deploy';
 
 const missionCards = [
@@ -87,7 +86,20 @@ export default function HomePage() {
           <p>Молодые исследователи работают не только в московских институтах, но и в филиалах ФНИСЦ РАН. Поэтому главная страница фиксирует Совет как распределённое сообщество, объединённое общей академической повесткой и институциональной принадлежностью.</p>
         </div>
         <div className="presence-layout">
-          <PresenceMapViewer />
+          <figure className="presence-map-card">
+            <Image
+              className="presence-map"
+              src={publicAssetPath('/maps/fnisc-presence-map.png')}
+              alt="Карта присутствия филиалов и институтов ФНИСЦ РАН"
+              width={1200}
+              height={700}
+              sizes="(max-width: 900px) 100vw, 68vw"
+              unoptimized
+            />
+            <figcaption>
+              Карта показывает фактическое распределение филиалов и институций по регионам.
+            </figcaption>
+          </figure>
           <aside className="presence-note" aria-label="Расшифровка карты">
             <h3>Узлы присутствия</h3>
             <div className="presence-list">
