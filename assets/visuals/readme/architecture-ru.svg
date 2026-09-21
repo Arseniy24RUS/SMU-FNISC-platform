@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">Режимы работы платформы СМУ ФНИСЦ РАН</title>
+  <desc id="desc">Вертикальная схема отделяет локальную автоматизацию от публичной статической сборки.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="13" markerHeight="13" refX="10" refY="6.5" orient="auto">
+      <path d="M1 1 L12 6.5 L1 12 Z" fill="#182b62"/>
+    </marker>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#17233f}
+      .title{font-size:32px;font-weight:800}
+      .sub{font-size:22px;font-weight:600}
+      .box{fill:#fff8ea;stroke:#b8943d;stroke-width:3;rx:18}
+      .boxAlt{fill:#f4f7fb;stroke:#296dc1;stroke-width:3;rx:18}
+      .num{font-size:24px;font-weight:900;fill:#9e1f2f}
+      .label{font-size:25px;font-weight:900}
+      .line{font-size:22px;font-weight:600}
+      .arrow{stroke:#182b62;stroke-width:4;fill:none;marker-end:url(#arrow)}
+      .note{fill:#9e1f2f}
+      .noteText{fill:white;font-size:21px;font-weight:700}
+    </style>
+  </defs>
+  <rect width="900" height="900" fill="#ffffff"/>
+  <text x="70" y="58" class="title">Режимы работы платформы СМУ</text>
+  <text x="70" y="92" class="sub">Одна кодовая база: локальная автоматизация и публичный сайт.</text>
+
+  <rect x="90" y="130" width="720" height="112" class="box"/>
+  <text x="122" y="172" class="num">1</text>
+  <text x="172" y="172" class="label">Публичные входные данные</text>
+  <text x="172" y="205" class="line">Профили участников, академические ID,</text>
+  <text x="172" y="232" class="line">меры поддержки и проверенные источники.</text>
+
+  <path class="arrow" d="M450 252 V292"/>
+
+  <rect x="90" y="302" width="720" height="112" class="box"/>
+  <text x="122" y="344" class="num">2</text>
+  <text x="172" y="344" class="label">Локальная автоматизация</text>
+  <text x="172" y="377" class="line">Prisma, SQLite, сборщики, API-маршруты</text>
+  <text x="172" y="404" class="line">и LLM-черновики работают вне Pages.</text>
+
+  <path class="arrow" d="M450 424 V464"/>
+
+  <rect x="90" y="474" width="720" height="112" class="boxAlt"/>
+  <text x="122" y="516" class="num">3</text>
+  <text x="172" y="516" class="label">Публичный слой данных</text>
+  <text x="172" y="549" class="line">data/public и public/generated питают</text>
+  <text x="172" y="576" class="line">открытые страницы без записи в базу.</text>
+
+  <path class="arrow" d="M450 596 V636"/>
+
+  <rect x="90" y="646" width="720" height="112" class="boxAlt"/>
+  <text x="122" y="688" class="num">4</text>
+  <text x="172" y="688" class="label">Статический сайт</text>
+  <text x="172" y="721" class="line">Главная, участники, публикации, СМИ,</text>
+  <text x="172" y="748" class="line">карьерная карта и меры поддержки.</text>
+
+  <rect x="90" y="796" width="720" height="82" rx="16" class="note"/>
+  <text x="118" y="828" class="noteText">Pages не запускает сбор данных, записи Prisma</text>
+  <text x="118" y="856" class="noteText">или LLM-запросы; они остаются локальными.</text>
+</svg>
